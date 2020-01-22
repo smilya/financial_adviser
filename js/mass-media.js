@@ -3,6 +3,7 @@
 let items = document.querySelectorAll('.publications .item');
 let pageBar = document.querySelector('.pagination');
 let pagesNumber = Math.ceil(publications.length / 6);
+let anchor = "#publications-anchor";
 
 let dummyItem = document.createElement('div');
 dummyItem.classList.add("item--dummy");
@@ -17,10 +18,11 @@ function fillItems(page) {
   for (let i = 0; i < items.length; i++) {
     let item = items[i];    
     let unit = publications[6*(page) + i];
-    if (unit == undefined) {
+    if (!unit) return;
+/*     if (unit == undefined) {
         item.classList.add("item--hidden");
         continue;
-      }
+      } */
 
     
    
@@ -37,26 +39,5 @@ function fillItems(page) {
 
 fillItems(0);
 
-for (let i = 0; i < pagesNumber; i++) {
-  let pageSquare = document.createElement("div");
-  pageSquare.innerHTML = '<span>' + (i+1) + '</span>';
-  pageBar.append(pageSquare);
-}
-
+makePagination(pagesNumber, pageBar, fillItems, items, anchor);
 document.querySelector(".pagination>div:first-of-type").className = "active";
-
-let pageSquares = document.querySelectorAll(".pagination>div");
-
-for (let i = 0; i < pagesNumber; i++) {
-  pageSquares[i].onclick = function() {
-    for (let j of pageSquares) {
-      j.classList.remove("active");
-    }
-
-    pageSquares[i].className = "active";
-
-    fillItems(i);    
-    
-    document.location = "#publications-anchor";
-  };
-}
