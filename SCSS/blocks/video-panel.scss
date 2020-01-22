@@ -1,0 +1,24 @@
+.video-panel {
+
+  &>div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    item {
+      width: $width-trio;
+      margin-bottom: 60px;
+      
+      iframe {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-weight: 600;
+        line-height: 24px;
+      }
+    }
+  }
+}

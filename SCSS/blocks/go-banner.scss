@@ -1,0 +1,40 @@
+.go-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0 30px;
+  background-color: #fff;
+
+  span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin-right: 20px;
+  }
+
+  img {
+    width: 32px;
+  }
+
+  .hover-on {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $color-danger;
+    cursor: pointer;
+
+    span {
+      color: #fff;
+    }
+    
+    .hover-on {
+      display: inline;
+    }
+
+    .hover-off {
+      display: none;
+    }
+  }
+}

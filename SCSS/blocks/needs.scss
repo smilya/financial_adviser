@@ -1,0 +1,47 @@
+.needs {
+  background-color: $color-background;
+  padding: 95px 0 100px;
+
+  &>div>div {
+    background-color: #fff;
+    background-image: url(../images/needs/image-needs.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: contain;
+    padding: 65px 0 70px 80px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 50px;      
+    }
+
+    h4 {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      width: 54%;
+
+      &>div {
+        font-size: 0;
+      }
+
+      li {
+        display: inline-block;
+        vertical-align: top;        
+        width: 50%;
+        padding-left: 5%;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 25px;
+        position: relative;
+
+        @include li-custom(0, 3px);
+
+      }
+    }
+  }
+}

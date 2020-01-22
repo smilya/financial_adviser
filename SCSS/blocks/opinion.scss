@@ -1,0 +1,53 @@
+.opinion {
+  background-color: $color-background;
+
+  h3 {
+    margin-bottom: 25px;
+  }
+
+  p {
+    color: #8d8d8d;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .mass-media-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    .mass-media {
+      width: 20%;
+      height: 155px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #fff;
+      cursor: pointer;
+  
+      &:hover {
+        box-shadow: 0 0 25px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 1;
+      }
+  
+      border-left: $border-common;
+      border-top: $border-common;
+      &:nth-of-type(5n) {
+        border-right: $border-common;
+      }
+      &:nth-of-type(n + 6) {
+        border-bottom: $border-common;
+      }
+  
+    }
+  
+    @for $i from 1 through 10 {
+      .mass-media-#{$i} {
+        background-image: url(../images/opinion/mass-media-#{$i}.jpg);
+      }
+    }
+  }
+
+
+}

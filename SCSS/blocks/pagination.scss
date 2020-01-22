@@ -1,0 +1,36 @@
+  .pagination {
+    display: flex;
+    justify-content: center;
+
+    a,
+    div {
+      width: 55px;
+      height: 55px;
+      border: $border-common;
+      border-left: none;
+      position: relative;
+      cursor: pointer;
+
+      &:first-of-type {
+        border-left: $border-common;
+      }
+
+      &.active {
+        background-color: $color-danger;
+        border: 1px solid $color-danger;
+
+        span {
+          color: #fff;
+        }
+      }
+
+      span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }

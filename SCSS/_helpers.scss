@@ -1,0 +1,50 @@
+.container {
+  max-width: 1500px;
+  min-width: 320px;
+  margin: 0 auto; 
+  padding: 0 30px;   
+}
+
+@for $i from 1 through 14 {
+  .mb-#{$i}0 {
+    margin-bottom: $i * 10px;
+  }
+}
+
+%when-pressed {
+  transform: translate(1px, 2px);
+}
+
+.underline {
+  width: 160px;
+  height: 6px;
+  background-color: $color-danger;
+}
+
+
+@mixin li-custom($left: -50px, $top: 5px) {
+  list-style: none;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: $left;
+    top: $top;
+    width: 18px;
+    height: 14px;
+    background-image: url(../images/needs/check-mark.png);
+  }
+}
+
+@mixin font-common($size: 18px, $line: 30px, $color: #000, $placeholder: #979797) {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: $size;
+  line-height: $line;
+  color: $color;
+
+  &::-webkit-input-placeholder {color: $placeholder;}
+  &::-moz-placeholder          {color: $placeholder;}/* Firefox 19+ */
+  &:-moz-placeholder           {color: $placeholder;}/* Firefox 18- */
+  &:-ms-input-placeholder      {color: $placeholder;}
+}

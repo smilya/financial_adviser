@@ -1,0 +1,33 @@
+.consultation {
+  background-color: $color-background;
+  padding-bottom: 120px;
+
+  .container>div {
+    background-color: #fff;
+    display: flex;
+    
+    &>div {
+      padding-left: 85px;
+      padding-top: 80px;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      h6 {
+        text-align: center;
+        position: relative;
+        right: 60px;
+        margin-bottom: 30px;
+      }
+
+     input {
+      width: 440px;
+      margin-bottom: 10px;
+     }
+
+    }
+
+    
+  }
+}

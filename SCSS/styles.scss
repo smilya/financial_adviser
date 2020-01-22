@@ -1,0 +1,26 @@
+@import "_vars.scss";
+@import "_helpers.scss";
+@import "_general.scss";
+
+// used at index page
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu.scss";
+@import "blocks/intro.scss";
+@import "blocks/link-banner.scss";
+@import "blocks/service.scss";
+@import "blocks/go-banner.scss";
+@import "blocks/opinion.scss";
+@import "blocks/publications.scss";
+@import "blocks/video.scss";
+@import "blocks/needs.scss";
+@import "blocks/about-me.scss";
+@import "blocks/consultation.scss";
+@import "blocks/footer.scss";
+
+// used at other pages
+@import "blocks/page-title.scss";
+@import "blocks/contacts.scss";
+@import "blocks/pagination.scss";
+@import "blocks/tags.scss";
+@import "blocks/video-panel.scss";

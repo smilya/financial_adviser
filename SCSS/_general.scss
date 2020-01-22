@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+      url('../Fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('../Fonts/Montserrat-Regular.woff') format('woff'),
+      url('../Fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+      url('../Fonts/Montserrat-Medium.woff2') format('woff2'),
+      url('../Fonts/Montserrat-Medium.woff') format('woff'),
+      url('../Fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Semi Bold'), local('Montserrat-Semi-Bold'),
+      url('../Fonts/Montserrat-SemiBold.woff2') format('woff2'),
+      url('../Fonts/Montserrat-SemiBold.woff') format('woff'),
+      url('../Fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+      url('../Fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('../Fonts/Montserrat-Bold.woff') format('woff'),
+      url('../Fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: #000000;  
+  background-color: $color-background;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 80px;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 24px; 
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+input {
+  display: block;
+  border: $border-common;
+  padding: 20px 35px 18px;
+  outline: none;
+
+  @include font-common($size: 16px);
+}

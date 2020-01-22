@@ -1,0 +1,11 @@
+{
+  "name": "finance",
+  "version": "1.0.0",
+  "description": "landing",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/:css/"
+  },
+  "author": "Smilya",
+  "license": "ISC"
+}
