@@ -1,0 +1,92 @@
+body {
+  background-color: lightblue;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 30px 60px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+menu {
+  padding-left: 0;
+  font-size: 0;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid green;
+}
+
+menu > a {
+  font-size: 16px;
+  text-decoration: none;
+  color: lightseagreen;
+  padding: 5px 20px 0px;
+  border: 1px solid lightseagreen;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;  
+}
+
+menu > a.active {
+  border-color: green;
+  color: green;
+  font-weight: bold;
+  background-color: lightblue;
+  cursor: default;
+  border-bottom: 2px solid lightblue;
+}
+
+h2 {
+  margin-top: 0;
+  padding-left: 2px; 
+}
+
+label {
+  display: inline-block;
+  width: 40px;  
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+label.forVideoNum {
+  width: 185px;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder {color:lightblue;}
+::-moz-placeholder          {color:lightblue;}/* Firefox 19+ */
+:-moz-placeholder           {color:lightblue;}/* Firefox 18- */
+:-ms-input-placeholder      {color:lightblue;}
+
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  margin-left: 44px;
+}
+
+.button:active {
+  transform: translate(1px, 1px);  
+}
+
+.w-35 {
+  width: 35px;
+}
+
+.w-400 {
+  width: 400px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
