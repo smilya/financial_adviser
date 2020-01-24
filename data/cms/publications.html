@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>CMS Articles</title>
+</head>
+<body>
+  <div class="container">
+    
+    <header>
+      <h1>CMS</h1>
+      <menu>
+        <a class="active" href="#">Статьи</a>
+        <a href="video.html">Видео</a>
+      </menu>
+    </header>
+  
+    <main>
+      <h2>Добавить новую статью</h2>
+
+      <div>
+        <label for="date">Дата:</label>
+        <input id="date" type="text" placeholder="ДД.ММ.ГГГГ">
+      </div>
+    
+      <div>
+        <label for="title">Имя:</label>
+        <input class="w-400" id="title" type="text" placeholder="Название статьи">
+      </div>
+    
+      <div>
+        <label for="link">Link:</label>
+        <input class="w-400" id="link" type="text" placeholder="Ссылка на статью">
+      </div>
+
+      <div>
+        <label for="syn">О чем:</label>
+        <textarea class="w-400" id="syn" rows="5" placeholder="Краткое описание" maxlength="250"></textarea>
+      </div>
+
+      <form action="imageWriter.php" method="post" enctype="multipart/form-data" target="_blank">
+        
+        <label for="fileLoader">Картинка:</label>
+        <input id="fileLoader" type="file" name="uploadfile">
+        <p>Название файла в формате: <ГГГГ-ММ-ДД.расширение></p>
+
+        <div>
+          <input type="submit" id="submitBtn" class="button" value="Добавить">
+        </div>
+      </form>
+
+      <h2 class="mt-50">Удалить статью</h2>
+  
+      <label class="forArticleNum" for="articleNum">Номер статьи по порядку:</label>
+      <input class="w-35" id="articleNum" type="number" value="1">
+  
+      <div>
+        <div id="removeBtn" class="button">Удалить</div>
+      </div>
+    </main> 
+  </div> 
+  
+
+  <script src="../publications-data.js"></script>
+  <script src="scriptPublications.js"></script>
+</body>
+</html>

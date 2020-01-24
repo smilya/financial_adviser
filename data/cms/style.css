@@ -48,13 +48,14 @@ h2 {
 
 label {
   display: inline-block;
-  width: 40px;  
+  width: 50px;  
   margin-bottom: 5px;
   font-weight: 700;
 }
 
-label.forVideoNum {
-  width: 185px;
+label.forVideoNum, 
+label.forArticleNum {
+  width: 195px;
 }
 
 input {
@@ -72,7 +73,8 @@ input {
   background-color: green;
   color: white;
   cursor: pointer;
-  margin-left: 44px;
+  margin-left: 56px;
+  border: 1px solid lightgray;
 }
 
 .button:active {
@@ -89,4 +91,29 @@ input {
 
 .mt-50 {
   margin-top: 50px;
+}
+
+label[for="fileLoader"] {
+  width: 80px;
+  display: block;
+}
+
+label[for="syn"] {
+  vertical-align: top;
+}
+
+textarea {
+  resize: none;
+  margin-bottom: 10px;
+}
+
+form > p {
+  margin-top: -10px;
+  margin-left: 60px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+#fileLoader {
+  margin-left: 55px;
 }

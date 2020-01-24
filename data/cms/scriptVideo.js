@@ -31,7 +31,7 @@ function correctDate(date) {
 }
 
 function ifFilled() {
-  if (!tagsField.value || !titleField || !srcField) return false;
+  if (!tagsField.value || !titleField.value || !srcField.value) return false;
   return true;
 }
 
@@ -40,7 +40,7 @@ function VideoObj (date, title, tags, src) {
   this.date = date;
   this.title = title;
   this.src = src;
-  this.tags = tags.split(" ");
+  this.tags = tags;
 }
 
 function amendVideos(videos) {
@@ -53,16 +53,27 @@ function amendVideos(videos) {
     },
     body: str,
   });
-
-  window.location.reload();
+  
 }
 
 
 addBtn.onclick = function() {
 
+  if(!ifFilled() || !correctDate(today)) return;
+
   let date = dateField.value;
   let title = titleField.value;
-  let tags = tagsField.value;
+
+  let tagsArr = tagsField.value.split(' ');
+  for (let i = 0; i < tagsArr.length; i++) {
+    tagsArr[i] = tagsArr[i].toLowerCase();
+    let strArr = tagsArr[i].split('');
+    strArr[0] = strArr[0].toUpperCase();
+    tagsArr[i] = strArr.join(''); 
+  }  
+      
+  let tags = tagsArr; 
+  
   let src = srcField.value;
 
   if ( !(correctDate(date)) || !(ifFilled()) ) {
@@ -82,7 +93,10 @@ addBtn.onclick = function() {
   titleField.value = '';
   tagsField.value = '';
   srcField.value = '';
-  
+
+  setTimeout(() => {
+    window.location.reload(true);
+  }, 2000);
 }
 
 removeBtn.onclick = function() {
@@ -101,10 +115,12 @@ removeBtn.onclick = function() {
 
   if (confirm(`Удалить видео: ${videoStr}`)) {
     videos.splice(num, 1);
+    amendVideos(videos);
+    videoNumField.value = '1';
   }
-
-  amendVideos(videos);
-
-  videoNumField.value = '';
+  
+  setTimeout(() => {
+    window.location.reload(true);
+  }, 2000);
 
 }
