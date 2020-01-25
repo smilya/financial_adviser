@@ -49,6 +49,17 @@ function ArticleObj(date, title, synopsis, link, image) {
   this.image = image;
 }
 
+function ifImageExists(path) {
+  
+  let pathArr = path.split('\\');
+  let name = pathArr[pathArr.length-1];
+
+  for (let i of publications) {
+    if (name == i.image) return true;
+  }
+  return false;
+}
+
 function amendPublications(publications) {
   let str = JSON.stringify(publications);
 
@@ -102,6 +113,11 @@ submitBtn.onclick = function() {
       return;
     }
     
+    if(ifImageExists(fileField.value)) {
+      alert("Картинка с таким именем уже существует.\nИзмените название файла с картинкой.")
+      fileField.value = '';
+      return;
+    }
 
     let imageName = fileName(fileField.value, "2019-11-07.jpg");
    
