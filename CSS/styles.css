@@ -1034,7 +1034,7 @@ footer .second-floor p {
   margin-right: 30px;
   cursor: pointer;
 }
-.tags li:hover {
+.tags li:hover, .tags li.active {
   color: #f0361f;
 }
 

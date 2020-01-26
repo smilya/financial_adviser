@@ -39,5 +39,5 @@ function fillItems(page) {
 
 fillItems(0);
 
-makePagination(pagesNumber, pageBar, fillItems, items, anchor);
+makePagination(pagesNumber, pageBar, fillItems, publications, items, anchor);
 document.querySelector(".pagination>div:first-of-type").className = "active";

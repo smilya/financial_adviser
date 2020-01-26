@@ -1,4 +1,4 @@
-function makePagination(pagesNumber, pageBar, fillFunc, items, anchor) {
+function makePagination(pagesNumber, pageBar, fillFunc, sourceArr, items, anchor) {
   for (let i = 0; i < pagesNumber; i++) {
     let pageSquare = document.createElement("div");
     pageSquare.innerHTML = '<span>' + (i+1) + '</span>';
@@ -15,10 +15,17 @@ function makePagination(pagesNumber, pageBar, fillFunc, items, anchor) {
   
       pageSquares[i].className = "active";
   
-      fillFunc(i, items);    
+      fillFunc(i, items, sourceArr);    
       
       document.location = anchor;
     };
   }
 
+}
+
+function removePagination() {
+  let pageSquares = document.querySelectorAll(".pagination>div");
+  for (let i of pageSquares) {
+    i.remove();
+  }
 }
