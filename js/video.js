@@ -45,11 +45,12 @@ function fillFilteredPage(tag) {
   fillItems(0, items, filteredArr);
   removePagination();
   numOfPages = Math.ceil(filteredArr.length / 9);
-  makePagination(numOfPages, pageBar, fillItems, filteredArr, items, anchor);
-  document.querySelector(".pagination>div:first-of-type").className = "active";
+  if (numOfPages) {
+    makePagination(numOfPages, pageBar, fillItems, filteredArr, items, anchor);
+    document.querySelector(".pagination>div:first-of-type").className = "active";
+  }
+  
 }
-
-let tags = document.querySelectorAll('.tags>li');
 
 function highlightTag(tagNum) {
   for (let i of tags) {
@@ -58,9 +59,22 @@ function highlightTag(tagNum) {
   tags[tagNum].classList.add("active");
 }
 
-tags[0].onclick = function(){fillFilteredPage("Финансы");highlightTag(0);};
-tags[1].onclick = function(){fillFilteredPage("Консультации");highlightTag(1);};
-tags[2].onclick = function(){fillFilteredPage("Деньги");highlightTag(2);};
-tags[3].onclick = function(){fillFilteredPage("Планирование");highlightTag(3);};
-tags[4].onclick = function(){fillFilteredPage("Инвестиции");highlightTag(4);};
-tags[5].onclick = function(){fillFilteredPage("Недвижимость");highlightTag(5);};
+function onTagClick(tagNum, tag) {
+  if (tags[tagNum].classList.contains('active')) {
+    tags[tagNum].classList.remove('active');
+    fillItems(0, items, videos);
+    return;
+  }
+
+  fillFilteredPage(tag);
+  highlightTag(tagNum);
+}
+
+let tags = document.querySelectorAll('.tags>li');
+
+tags[0].onclick = function(){ onTagClick(0, "Финансы") };
+tags[1].onclick = function(){ onTagClick(1, "Консультации") };
+tags[2].onclick = function(){ onTagClick(2, "Деньги") };
+tags[3].onclick = function(){ onTagClick(3, "Планирование") };
+tags[4].onclick = function(){ onTagClick(4, "Инвестиции") };
+tags[5].onclick = function(){ onTagClick(5, "Недвижимость") };
