@@ -13,3 +13,18 @@ for (let i=0; i<3; i++) {
 let iframes = document.querySelectorAll("iframe");
 iframes[0].src = videos[0].src;
 iframes[1].src = videos[1].src;
+
+let launchConsultation = document.getElementById('launchConsultation');
+launchConsultation.onclick = function() {
+  
+  let form = document.getElementById('consultationForm');
+
+  fetch('./php/consultation.php', {
+    method: 'POST',
+    body: new FormData(form),
+  });
+  
+  alert("Спасибо за обращение!\r\n Мы свяжемся с вами вближайшее время.");
+  form.reset();
+
+}
