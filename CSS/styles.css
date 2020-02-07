@@ -788,6 +788,15 @@ menu li.dzen-holder:hover img:last-of-type, menu li.dzen-holder:active img:last-
   width: 440px;
   margin-bottom: 10px;
 }
+.consultation .container > div > div input.error {
+  color: red;
+}
+.consultation .container > div > div input.error::-webkit-input-placeholder {
+  color: red;
+}
+.consultation .container > div > div input.error::-moz-placeholder {
+  color: red;
+}
 
 footer {
   background-color: #262626;

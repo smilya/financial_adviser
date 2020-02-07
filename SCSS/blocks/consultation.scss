@@ -21,13 +21,17 @@
         margin-bottom: 30px;
       }
 
-     input {
-      width: 440px;
-      margin-bottom: 10px;
-     }
+      input {
+        width: 440px;
+        margin-bottom: 10px;
+
+        &.error {color: red;}
+        &.error::-webkit-input-placeholder { color: red; };
+        &.error::-moz-placeholder { color: red; };
+      }
+
+
 
     }
-
-    
   }
 }
