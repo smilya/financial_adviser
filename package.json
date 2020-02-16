@@ -4,7 +4,8 @@
   "description": "landing",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss/:css/"
+    "sass": "sass --watch scss/:css/",
+    "sync": "browser-sync start --server --files css/*.css, ./*.html, js/*.js, pages/*.html, data/*.js" 
   },
   "author": "Smilya",
   "license": "ISC"

@@ -377,12 +377,12 @@
           <h2>Запишитесь<br>на персональную консультацию</h2>
           <h6>Получите ответы на самые важные<br>финансовые вопросы</h6>
           
-          <form action="">
-            <input type="text" placeholder="Как Вас зовут?">
-            <input type="email" placeholder="Ваш e-mail">
-            <input type="text" placeholder="Какой у вас вопрос?">
+          <form id="consultationForm">
+            <input type="text" name="name" placeholder="Как Вас зовут?">
+            <input type="email" name="email" placeholder="Ваш e-mail">
+            <input type="text" name="text" placeholder="Какой у вас вопрос?">
     
-            <div class="link-banner">
+            <div class="link-banner" id="launchConsultation">
               <span>записаться на консультацию</span>
               <img src="./images/banners/arrow-next-white.png" alt="arrow-next">
             </div>
@@ -473,7 +473,9 @@
     </footer>
 
     <script src="./data/publications-data.js"></script>
+    <script src="./data/video-data.js"></script>
     <script src="./js/index-page.js"></script>
+    <script src="./js/consultation.js"></script>
 
 </body>
 </html>

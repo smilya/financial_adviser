@@ -5,7 +5,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    item {
+    .item {
       width: $width-trio;
       margin-bottom: 60px;
       
@@ -19,6 +19,14 @@
         font-weight: 600;
         line-height: 24px;
       }
+    }
+
+    .item--hidden {
+      display: none;
+    }
+
+    .item--dummy {
+      width: $width-trio;
     }
   }
 }

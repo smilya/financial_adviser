@@ -788,6 +788,15 @@ menu li.dzen-holder:hover img:last-of-type, menu li.dzen-holder:active img:last-
   width: 440px;
   margin-bottom: 10px;
 }
+.consultation .container > div > div input.error {
+  color: red;
+}
+.consultation .container > div > div input.error::-webkit-input-placeholder {
+  color: red;
+}
+.consultation .container > div > div input.error::-moz-placeholder {
+  color: red;
+}
 
 footer {
   background-color: #262626;
@@ -1034,7 +1043,7 @@ footer .second-floor p {
   margin-right: 30px;
   cursor: pointer;
 }
-.tags li:hover {
+.tags li:hover, .tags li.active {
   color: #f0361f;
 }
 
@@ -1043,18 +1052,24 @@ footer .second-floor p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.video-panel > div:first-of-type item {
+.video-panel > div:first-of-type .item {
   width: 31.25%;
   margin-bottom: 60px;
 }
-.video-panel > div:first-of-type item iframe {
+.video-panel > div:first-of-type .item iframe {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
 }
-.video-panel > div:first-of-type item p {
+.video-panel > div:first-of-type .item p {
   font-weight: 600;
   line-height: 24px;
+}
+.video-panel > div:first-of-type .item--hidden {
+  display: none;
+}
+.video-panel > div:first-of-type .item--dummy {
+  width: 31.25%;
 }
 
 /*# sourceMappingURL=styles.css.map */
