@@ -1,0 +1,31 @@
+.service-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service-panel .service-panel__item {
+  width: 49%;
+  background-color: #fff;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.service-panel .service-panel__item iframe {
+  min-width: 325px;
+  height: 245px;
+}
+.service-panel .service-panel__item > div {
+  padding: 15px 0 0 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.service-panel .service-panel__item > div p {
+  font-size: 16px;
+}
+.service-panel .service-panel__item > div .go-banner {
+  padding: 0 10px;
+}
+
+/*# sourceMappingURL=service-panel.css.map */
