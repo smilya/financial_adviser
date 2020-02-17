@@ -38,3 +38,23 @@
     }
   }
 }
+
+.go-banner--simple {
+  display: inline-flex;       
+
+  &:hover {
+    .hover-on {
+      display: none;
+    }
+    
+    .hover-off {
+      display: inline;
+    }
+
+    background-color: #fff;
+    
+    span {
+      color: $color-danger;
+    }
+  }
+}

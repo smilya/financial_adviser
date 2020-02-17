@@ -477,6 +477,22 @@ menu li.dzen-holder:hover img:last-of-type, menu li.dzen-holder:active img:last-
   display: none;
 }
 
+.go-banner--simple {
+  display: inline-flex;
+}
+.go-banner--simple:hover {
+  background-color: #fff;
+}
+.go-banner--simple:hover .hover-on {
+  display: none;
+}
+.go-banner--simple:hover .hover-off {
+  display: inline;
+}
+.go-banner--simple:hover span {
+  color: #f0361f;
+}
+
 .opinion {
   background-color: #fafafa;
 }
@@ -567,6 +583,25 @@ menu li.dzen-holder:hover img:last-of-type, menu li.dzen-holder:active img:last-
   position: relative;
   padding-bottom: 95px;
   margin-bottom: 45px;
+  /* .go-banner {
+    display: inline-flex;       
+
+    &:hover {
+      .hover-on {
+        display: none;
+      }
+
+      .hover-off {
+        display: inline;
+      }
+
+      background-color: #fff;
+
+      span {
+        color: $color-danger;
+      }
+    }
+  } */
 }
 .publications .item.item--hidden {
   display: none;
@@ -600,21 +635,6 @@ menu li.dzen-holder:hover img:last-of-type, menu li.dzen-holder:active img:last-
   color: #ababab;
   font-size: 11px;
   letter-spacing: 1.5px;
-}
-.publications .item .go-banner {
-  display: inline-flex;
-}
-.publications .item .go-banner:hover {
-  background-color: #fff;
-}
-.publications .item .go-banner:hover .hover-on {
-  display: none;
-}
-.publications .item .go-banner:hover .hover-off {
-  display: inline;
-}
-.publications .item .go-banner:hover span {
-  color: #f0361f;
 }
 .publications .item .item__footer {
   position: absolute;
