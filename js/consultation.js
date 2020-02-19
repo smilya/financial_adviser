@@ -65,16 +65,59 @@ launchConsultation.onclick = function() {
     fetch('./php/consultation.php', {
       method: 'POST',
       body: new FormData(form),
-    });
+    }).then(response => response.text())
+      .then(result => feedback(result)); 
   }
 
   else {
     fetch('../php/consultation.php', {
       method: 'POST',
       body: new FormData(form),
-    });    
+    }).then(response => response.text())
+      .then(result => feedback(result));     
   }
+
+  function feedback(result) {
+    let body = document.querySelector('body');
+
+    if (result) {
+      body.insertAdjacentHTML("afterbegin", consultatinConfirm);
+    }
+    else {
+      body.insertAdjacentHTML("afterbegin", consultationFail);
+    }
+
+    document.getElementById("close-info").onclick = function() {
+      document.getElementById('consultationInfo').remove();
+    }
+
+    form.reset();
+   }
+
+} 
+   let consultatinConfirm = `
+    <div id="consultationInfo">
+      <div id="blur-over"></div>
+      <div class="modal-window modal-info">
+        <div class="close-cross__container"><div class="close-cross" id="close-info">×</div></div>
+        <div class="modal-window__main">
+          <h3>Спасибо, Ваш<br>запрос отправлен!</h3>
+          <h6>Я свяжусь с Вами как можно скорее</h6>
+        </div>
+      </div>
+    </div>
+   `;
+
+   let consultatinFail = `
+    <div id="consultationInfo">
+      <div id="blur-over"></div>
+      <div class="modal-window modal-info">
+        <div class="close-cross__container"><div class="close-cross" id="close-info">×</div></div>
+        <div class="modal-window__main">
+          <h3>Что-то пошло не так...</h3>
+          <h6>В настоящее время сервер не работает.<br>Попробуйте отправить заявку позже.</h6>
+        </div>
+      </div>
+    </div>
+   `;
   
-  alert("Спасибо за обращение!\r\n Мы свяжемся с вами вближайшее время.");
-  form.reset();
-}

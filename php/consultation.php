@@ -14,7 +14,9 @@ $date = date ("Y-m-d H:i:s");
 $strForLog = $date."\r\n".$secondSrt.$thirdStr.$fourthStr."\r\n\r\n";
 
 $file = fopen("../data/consultation.log", "a");
-fputs($file, $strForLog);
+$ifSuccess = fputs($file, $strForLog);
 fclose($file); 
+
+echo $ifSuccess;
 
 ?>

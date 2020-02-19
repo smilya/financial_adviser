@@ -92,4 +92,11 @@ input {
   outline: none;
 
   @include font-common($size: 16px);
+
+  &.error {
+    border-color: red !important;
+    color: red !important;
+    &::-webkit-input-placeholder {color: red !important;}
+    &::-moz-placeholder          {color: red !important;}
+  }
 }

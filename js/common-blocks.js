@@ -144,8 +144,8 @@ let footer = `
         </div>
 
         <form>
-          <input type="email" placeholder="Ваш e-mail">
-          <div class="link-banner">
+          <input type="email" placeholder="Ваш e-mail" id="subscribe-email">
+          <div class="link-banner"  id="subscribe-button">
             <img src="../images/banners/arrow-next-white.png" alt="arrow-next">
           </div>
         </form>            
@@ -164,3 +164,5 @@ document.querySelector(".menu--header").insertAdjacentHTML("afterBegin", menuHea
 document.querySelector(".consultation").insertAdjacentHTML("afterBegin", consultation);
 document.querySelector(".menu--footer").insertAdjacentHTML("afterBegin", menuFooter);
 document.querySelector("footer").insertAdjacentHTML("afterBegin", footer);
+
+
