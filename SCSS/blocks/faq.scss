@@ -1,0 +1,118 @@
+.faq {
+  #modal-askQuestion {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .input-container {
+        display: flex;
+        justify-content: space-between;
+        align-self: stretch;
+        margin-top: 30px;
+
+        input {
+          display: inline-block;
+        }
+      }
+
+      textarea {
+        margin-top: 15px;
+        margin-bottom: 35px;
+        width: 730px;
+        border: $border-common;
+        padding: 20px 35px 18px;
+        outline: none;
+        resize: none;
+        font-size: 16px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        &::-webkit-input-placeholder {color: #979797;}
+        &::-moz-placeholder          {color: #979797;}
+      }
+
+      .link-banner {
+        padding-left: 99px;
+        padding-right: 98px;
+      }
+    }
+
+  }
+
+  .link-banner {
+    padding-left: 65px;
+    padding-right: 64px;
+  }
+
+  .faq-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    .faq-tags {
+      background-color: #fff;
+      width: 30%;
+      margin-right: 2.2%;
+      line-height: 22px;
+      padding: 40px;
+    }
+
+    .faq-panel {
+      width: 70%;
+      
+      .faq-item {
+        background-color: #fff;
+        margin-bottom: 7px;
+
+        .faq-item__header {
+          border: $border-common;
+          font-size: 22px;
+          font-weight: 700;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 25px 40px 22px;
+
+          .faq-item__arrows {
+            position: relative;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 18px;             
+            }
+          }
+        }
+
+        .faq-item__body {
+          padding: 30px 40px 45px;
+          border: $border-common;
+          border-top: none;
+
+          p {
+            font-size: 16px;
+            margin-bottom: 35px;            
+          }
+
+         .faq-video-container {
+          display: flex;
+
+          iframe {
+            margin-right: 45px;
+          }
+
+         }
+
+        }
+
+      }
+           
+    }
+  }
+
+}
