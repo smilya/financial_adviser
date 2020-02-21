@@ -105,8 +105,8 @@
   }
 }
 
-// Выведение вопросов из базы в панель
-// {
+// Выведение вопросов из базы в панель и фильтрация по тегам
+
   let faqItemHTML = `
       <div class="faq-item__header">
         <p class="faq-title"></p>
@@ -125,8 +125,10 @@
   `;
 
   let faqPanel = document.querySelector(".faq-panel");
+  let tags = document.querySelectorAll('.faq-tags li');
 
   function putQuestions(questionsArr) {
+    clearFaqPanel()    
     for (let questionObj of questionsArr) {
       let newFaqItem = document.createElement('div');
       newFaqItem.classList.add('faq-item');
@@ -138,21 +140,15 @@
       newFaqItem.querySelector('.faq-video-text').innerText = questionObj.videoText;
       newFaqItem.querySelector('iframe').src = questionObj.videoLink;
     }
+    setOpenClose();
   }
-  
-  putQuestions(faqs);
- 
-  
- 
 
+  function clearFaqPanel() {
+    let items = document.querySelectorAll('.faq-item');
+    for (let i of items) i.remove();
+  }
 
- 
-
-
-// }
-
-//Раскрытие-закрытие блока с вопросом
-{
+  function setOpenClose() {
   let arrowsBlocks = document.querySelectorAll(".faq-item__arrows");
   let questionBodies = document.querySelectorAll(".faq-item__body");
   
@@ -162,6 +158,31 @@
       arrows[0].classList.toggle('hidden');
       arrows[1].classList.toggle('hidden');
       questionBodies[i].classList.toggle('hidden');
+      }
     }
   }
-}
+  
+ 
+  for (let tag of tags) {
+    tag.onclick = function() {
+      if (tag.classList.contains('active')) {
+        tag.classList.remove('active');
+        putQuestions(faqs);
+      }
+      else {
+        tag.classList.add('active');
+        let tagText = tag.innerText.slice(1).toLowerCase();
+        let taggedQuestions = [];
+        for (let question of faqs) {
+          if (question.tags.includes(tagText)) {
+            taggedQuestions.push(question);
+          }
+        }
+        putQuestions(taggedQuestions); 
+      }
+
+     
+    }
+  }
+
+  putQuestions(faqs);
