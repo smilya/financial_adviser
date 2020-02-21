@@ -1,3 +1,4 @@
+"use strict";
 //Блок кода работы с формой "Задать вопрос"
 {
   let modalAskQuestion = document.getElementById("modal-askQuestion");  
@@ -104,3 +105,63 @@
   }
 }
 
+// Выведение вопросов из базы в панель
+// {
+  let faqItemHTML = `
+      <div class="faq-item__header">
+        <p class="faq-title"></p>
+        <div class="faq-item__arrows">
+          <img class="faq-arrow-whenClosed" src="../images/faq/arrow-down.png" alt="arrow-down">
+          <img class="faq-arrow-whenOpen hidden" src="../images/faq/arrow-up.png" alt="arrow-up">                
+        </div>
+      </div>
+      <div class="faq-item__body hidden">
+        <p class="faq-answer"></p> 
+        <div class="faq-video-container">
+          <iframe width="230" height="156" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="faq-video-text"></p>
+        </div>   
+      </div>            
+  `;
+
+  let faqPanel = document.querySelector(".faq-panel");
+
+  function putQuestions(questionsArr) {
+    for (let questionObj of questionsArr) {
+      let newFaqItem = document.createElement('div');
+      newFaqItem.classList.add('faq-item');
+      newFaqItem.innerHTML = faqItemHTML;
+      faqPanel.append(newFaqItem);
+
+      newFaqItem.querySelector('.faq-title').innerText = questionObj.title;
+      newFaqItem.querySelector('.faq-answer').innerText = questionObj.answer;
+      newFaqItem.querySelector('.faq-video-text').innerText = questionObj.videoText;
+      newFaqItem.querySelector('iframe').src = questionObj.videoLink;
+    }
+  }
+  
+  putQuestions(faqs);
+ 
+  
+ 
+
+
+ 
+
+
+// }
+
+//Раскрытие-закрытие блока с вопросом
+{
+  let arrowsBlocks = document.querySelectorAll(".faq-item__arrows");
+  let questionBodies = document.querySelectorAll(".faq-item__body");
+  
+  for (let i = 0; i < arrowsBlocks.length; i++) {
+    arrowsBlocks[i].onclick = function() {
+      let arrows = arrowsBlocks[i].querySelectorAll('img');
+      arrows[0].classList.toggle('hidden');
+      arrows[1].classList.toggle('hidden');
+      questionBodies[i].classList.toggle('hidden');
+    }
+  }
+}

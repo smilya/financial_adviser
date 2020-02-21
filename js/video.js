@@ -1,3 +1,5 @@
+"use strict";
+
 let items = document.querySelectorAll('.item');
 let pagesNumber = Math.ceil(videos.length / 9);
 let pageBar = document.querySelector('.pagination');

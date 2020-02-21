@@ -1,3 +1,5 @@
+"use strict";
+
 let header = `
   <div class="container">
         

@@ -1,3 +1,4 @@
+"use strict";
 
 let launchConsultation = document.getElementById('launchConsultation');
 let nameField = document.querySelector('#consultationForm>input[name="name"]');

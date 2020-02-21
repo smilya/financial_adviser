@@ -1,3 +1,5 @@
+"use strict";
+
 function makePagination(pagesNumber, pageBar, fillFunc, sourceArr, items, anchor) {
   for (let i = 0; i < pagesNumber; i++) {
     let pageSquare = document.createElement("div");

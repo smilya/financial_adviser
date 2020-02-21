@@ -1,3 +1,5 @@
+"use strict";
+
 let body = document.querySelector('body');
 
 // Проверяем, запущен скрипт с главной страницы (index.html) или нет
