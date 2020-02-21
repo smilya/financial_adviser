@@ -182,6 +182,17 @@ input.error::-moz-placeholder {
   color: red !important;
 }
 
+textarea.error {
+  border-color: red !important;
+  color: red !important;
+}
+textarea.error::-webkit-input-placeholder {
+  color: red !important;
+}
+textarea.error::-moz-placeholder {
+  color: red !important;
+}
+
 .hidden {
   display: none;
 }

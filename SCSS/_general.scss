@@ -101,6 +101,13 @@ input {
   }
 }
 
+textarea.error {
+  border-color: red !important;
+  color: red !important;
+  &::-webkit-input-placeholder {color: red !important;}
+  &::-moz-placeholder          {color: red !important;}
+}
+
 .hidden {
   display: none;
 }
