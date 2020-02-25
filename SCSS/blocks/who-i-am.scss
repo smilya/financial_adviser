@@ -1,0 +1,103 @@
+.who-i-am {
+  h3, h4 {
+    text-align: center;
+  }
+
+  .who-i-am__intro {
+    display: flex;
+    justify-content: space-between;
+
+    .who-i-am__foo {
+      min-width: 640px;
+      height: 420px;
+      background-color: #e2e2e2;
+    }
+
+    .who-i-am__slogan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 90px;
+    }
+  }
+
+  .who-i-am__medals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .medals__item {
+      flex-basis: 20%;
+      margin-bottom: 30px;  
+
+      .medal-body {
+        width: 182px;
+        height: 147px;
+        margin: 0 auto;
+        background-image: url("../images/who-i-am/medal.png");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 50px;
+        position: relative;
+
+        p {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: $color-danger;
+          font-weight: 900;
+          font-size: 12px;
+          line-height: 16px;
+
+          span {
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .medal-title {
+        text-align: center;
+      }
+      
+    }
+  }
+
+  .who-i-am__certificates {
+    background-color: #fff;
+    padding-top: 70px;
+    padding-bottom: 20px;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        flex-basis: 40%;
+        list-style-type: square;
+        margin-left: 8%;
+        margin-right: 2%;
+        margin-bottom: 50px;
+        padding-left: 12px;
+        padding-right: 12px;
+        color: $color-danger;
+        font-size: 32px;
+        position: relative;
+
+        .certificates__title {
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 25px;
+          color: black;       
+        }
+
+        .certificates__text {
+          color: #676767;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

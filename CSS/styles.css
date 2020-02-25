@@ -1323,4 +1323,91 @@ footer .second-floor p {
   margin-right: 45px;
 }
 
+.who-i-am h3, .who-i-am h4 {
+  text-align: center;
+}
+.who-i-am .who-i-am__intro {
+  display: flex;
+  justify-content: space-between;
+}
+.who-i-am .who-i-am__intro .who-i-am__foo {
+  min-width: 640px;
+  height: 420px;
+  background-color: #e2e2e2;
+}
+.who-i-am .who-i-am__intro .who-i-am__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 90px;
+}
+.who-i-am .who-i-am__medals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.who-i-am .who-i-am__medals .medals__item {
+  flex-basis: 20%;
+  margin-bottom: 30px;
+}
+.who-i-am .who-i-am__medals .medals__item .medal-body {
+  width: 182px;
+  height: 147px;
+  margin: 0 auto;
+  background-image: url("../images/who-i-am/medal.png");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+  position: relative;
+}
+.who-i-am .who-i-am__medals .medals__item .medal-body p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f0361f;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 16px;
+}
+.who-i-am .who-i-am__medals .medals__item .medal-body p span {
+  font-size: 18px;
+  line-height: 24px;
+}
+.who-i-am .who-i-am__medals .medals__item .medal-title {
+  text-align: center;
+}
+.who-i-am .who-i-am__certificates {
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.who-i-am .who-i-am__certificates ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.who-i-am .who-i-am__certificates ul li {
+  flex-basis: 40%;
+  list-style-type: square;
+  margin-left: 8%;
+  margin-right: 2%;
+  margin-bottom: 50px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #f0361f;
+  font-size: 32px;
+  position: relative;
+}
+.who-i-am .who-i-am__certificates ul li .certificates__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: black;
+}
+.who-i-am .who-i-am__certificates ul li .certificates__text {
+  color: #676767;
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=styles.css.map */
