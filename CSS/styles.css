@@ -1324,7 +1324,7 @@ footer .second-floor p {
 }
 
 .who-i-am h3, .who-i-am h4 {
-  text-align: center;
+  text-align: left;
 }
 .who-i-am .who-i-am__intro {
   display: flex;
@@ -1408,6 +1408,75 @@ footer .second-floor p {
 .who-i-am .who-i-am__certificates ul li .certificates__text {
   color: #676767;
   font-size: 18px;
+}
+
+.slider .slider-body {
+  background-color: #fff;
+  margin-bottom: 55px;
+  position: relative;
+}
+.slider .slider-pagination {
+  display: flex;
+  justify-content: center;
+}
+.slider .slider-pagination .slider-pagination-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #d1d1d1;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+.slider .slider-pagination .slider-pagination-dot.active {
+  background-color: #f0361f;
+}
+.slider .slider-button {
+  background-color: #f0361f;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+.slider .slider-button.slider-button--right {
+  right: -27px;
+}
+.slider .slider-button.slider-button--right:active {
+  transform: translate(2px, -50%);
+}
+.slider .slider-button.slider-button--left {
+  left: -27px;
+}
+.slider .slider-button.slider-button--left:active {
+  transform: translate(-2px, -50%);
+}
+.slider .slider-button img {
+  width: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-who-i-am__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 35px;
+  height: 520px;
+}
+.slider-who-i-am__container > div {
+  flex-basis: 33.33%;
+  padding: 0 45px 0 35px;
+}
+.slider-who-i-am__container > div h6 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.slider-who-i-am__container > div .underline {
+  width: 100px;
+  height: 3px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
