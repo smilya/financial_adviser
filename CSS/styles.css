@@ -115,7 +115,7 @@ body {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 48px;
   line-height: 80px;
 }
 
@@ -1027,12 +1027,13 @@ footer .second-floor p {
   word-spacing: normal;
 }
 .page-title h1 {
-  margin-top: 45px;
+  margin-top: 50px;
   margin-left: -5px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .page-title p {
   font-size: 24px;
+  font-weight: 600;
 }
 .page-title p > a {
   text-decoration: none;
@@ -1415,6 +1416,15 @@ footer .second-floor p {
   margin-bottom: 55px;
   position: relative;
 }
+.slider .slider-blackout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: white;
+}
 .slider .slider-pagination {
   display: flex;
   justify-content: center;
@@ -1438,6 +1448,7 @@ footer .second-floor p {
   top: 50%;
   transform: translate(0, -50%);
   cursor: pointer;
+  z-index: 2;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

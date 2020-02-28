@@ -8,11 +8,14 @@ for (let i = 0; i < cases.length; i++) {
   paginationPanel.append(newDot);
 }
 let paginationDots = document.querySelectorAll('.slider-pagination-dot');
+let blackout = document.querySelector('.slider-blackout');
 let currentCase = 0;
 
 switchCase(currentCase);
 
 function switchCase(number) {
+  blackout.classList.remove('hidden');
+  setTimeout( () => {blackout.classList.add('hidden');}, 100)
   initialDataField.innerHTML = cases[number].initialData;
   recomendationsField.innerHTML = cases[number].recomendations;
   outcomeField.innerHTML = cases[number].outcome;
