@@ -1,17 +1,17 @@
 let cases = [
   {
-    initialData: 'В течение нескольких лет средствами клиента распоряжалась управляющая компания швейцарского банка, которая потеряла около 20% изначального капитала. Также ежегодно в рамках договора доверительного управленияс клиента снимали 1,5% от суммы активов за управление и 10% вознаграждения за успех (success fee).',
-    recomendations: '<b>1.</b> Вывести деньги из управляющей компании банка и открыть брокерский счет в иностранной компании.<br><b>2.</b> Купить ETF, в структуру которых входят среднесрочные еврооблигации, и небольшой объем ETF на индекс SP500 для увеличения доходности.',
-    outcome: '<b>1.</b> С начала 2018 года чистая ежегодная доходность портфеля — более 6% в долларах США.'
+    initialData: "В течение нескольких лет средствами клиента распоряжалась управляющая компания швейцарского банка, которая потеряла около 20% изначального капитала. Также ежегодно в рамках договора доверительного управленияс клиента снимали 1,5% от суммы активов за управление и 10% вознаграждения за успех(success fee).",
+    recomendations: "<b>1.</b> Вывести деньги из управляющей компании банка и открыть брокерский счет в иностранной компании.<br><b>2.</b> Купить ETF, в структуру которых входят среднесрочные еврооблигации, и небольшой объем ETF на индекс SP500 для увеличения доходности.",
+    outcome: "<b>1.</b> С начала 2018 года чистая ежегодная доходность портфеля — более 6% в долларах США.",
   },
   {
-    initialData: "ДВА. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius voluptates necessitatibus, temporibus velit eaque sit animi saepe doloremque quos, doloribus quam officiis! Aliquam tenetur, adipisci porro debitis veritatis officia.",
-    recomendations: "ДВА. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius voluptates necessitatibus, temporibus velit eaque sit animi saepe doloremque quos, doloribus quam officiis! Aliquam tenetur, adipisci porro debitis veritatis officia.",
-    outcome: "ДВА. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius voluptates necessitatibus, temporibus velit eaque sit animi saepe doloremque quos, doloribus quam officiis! Aliquam tenetur, adipisci porro debitis veritatis officia."
+    initialData: "Клиент планировал вложить средства в недвижимость на территории США, чтобы получать рентный доход в валюте. От покупки его удерживали невысокая ликвидность активов и проблемы технического обслуживания, поэтому он хотел рассмотреть альтернативные варианты вложений.",
+    recomendations: "<b>1.</b> Купить ETF на облигации с выплатой купонного дохода и ETF на дивидендные акции американских компаний.<br><b>2.</b> Разместить часть средств в REIT.",
+    outcome: "<b>1.</b> Клиент получает выплату дивидендов около 3% ежегодно;<br><b>2.</b> С 2017 года прирост стоимости портфеля составил более 15% в долларах США.",
   },
   {
-    initialData: "ТРИ. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius voluptates necessitatibus, temporibus velit eaque sit animi saepe doloremque quos, doloribus quam officiis! Aliquam tenetur, adipisci porro debitis veritatis officia.",
-    recomendations: "ТРИ. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius voluptates necessitatibus, temporibus velit eaque sit animi saepe doloremque quos, doloribus quam officiis! Aliquam tenetur, adipisci porro debitis veritatis officia.",
-    outcome: "ТРИ. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius voluptates necessitatibus, temporibus velit eaque sit animi saepe doloremque quos, doloribus quam officiis! Aliquam tenetur, adipisci porro debitis veritatis officia."
+    initialData: "Клиент хотел сформировать часть портфеля в российских активах со среднесрочным горизонтом инвестирования 3-6 лет, желаемой доходностью от 10% годовых и умеренным риском.",
+    recomendations: "<b>1.</b> Купить ОФЗ с помощью ИИС типа А. За счет налогового вычета, который предусмотрен ИИС, доходность приближена к целевому показателю, при этом риск остается минимальным.<br><b>2.</b> Докупать в портфель на протяжении полугода разные дивидендные акции со среднегодовыми темпами (CAGR) роста дивидендов не менее 10% и одновременно исторической дивидендной доходностью за последние 2 года не менее 10%.<br><b>3.</b> Купить ETF на еврооблигации российских эмитентов.",
+    outcome: "<b>1.</b> Клиент получает доход наличными около 10% в год;<br><b>2.</b> С 2018 года прирост стоимости портфеля составил 25%.",
   },
 ];

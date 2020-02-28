@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <title>Второе мнение</title>
+</head>
+<body>
+  <header></header>
+  <menu class="menu--header"></menu>
+
+  <section class="page-title">
+    <div class="container">
+      <span><a href="../index.html">Главная</a> &ndash; <a href="service.html">Услуги</a> &ndash; <span>Второе мнение</span></span>
+      <h1 class="who-i-am__firstHeading mb-20">Второе мнение</h1>
+      <p class="mb-40">Альтернативный взгляд на инвестиционные предложения<br>других компаний и консультантов</p>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container">
+      <div class="service-menu mb-80">
+        <div class="service-menu-item service-item-consultation">
+          <a href="#">
+            <p>Персональная<br>консультация</p>
+            <div class="underline"></div>
+          </a>
+        </div>
+        <div class="service-menu-item">
+          <a href="#">
+            <p>Составление личного<br>финансового плана</p>
+            <div class="underline"></div>
+          </a>
+        </div>
+        <div class="service-menu-item service-item-escort">
+          <a href="#">
+            <p>Индивидуальное<br>сопровождение</p>
+            <div class="underline"></div>
+          </a>
+        </div>
+        <div class="service-menu-item service-item-decision">
+          <a href="#">
+            <p>Разработка <br>индивидуального<br>решения</p>
+            <div class="underline"></div>
+          </a>
+        </div>
+        <div class="service-menu-item service-item-opinion">
+          <a href="service-opinion.html">
+            <p>Второе мнение</p>
+            <div class="underline"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="consultation"></section>
+  <menu class="menu--footer"></menu>
+  <footer></footer>
+</body>
+
+<script src="../js/common-blocks.js"></script>
+<script src="../js/common-interaction.js"></script>
+<script src="../js/consultation.js"></script>
+<script>
+  let activeMenus = document.querySelectorAll('.menu__service');
+  activeMenus[0].classList.add('active');
+  activeMenus[1].classList.add('active');
+  document.querySelector('.service-item-opinion').classList.add('active');
+</script>
+
+</html>

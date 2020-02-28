@@ -1,0 +1,35 @@
+.service-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .service-menu-item {
+    width: 20%;
+    margin-right: 30px;
+  
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #c0b7b7;
+      margin-bottom: 30px;
+    }
+
+    .underline {
+      width: 100%;
+      height: 2px;
+      background-color: #c8c8c8;
+    }
+
+    &.active {
+      p {
+        color: black;
+      }
+
+      .underline {
+        background-color: $color-danger;
+      }      
+
+    }
+  }
+}

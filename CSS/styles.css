@@ -197,6 +197,11 @@ textarea.error::-moz-placeholder {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #blur-over {
   position: fixed;
   top: 0;
@@ -1034,6 +1039,7 @@ footer .second-floor p {
 .page-title p {
   font-size: 24px;
   font-weight: 600;
+  line-height: 38px;
 }
 .page-title p > a {
   text-decoration: none;
@@ -1491,6 +1497,34 @@ footer .second-floor p {
   width: 100px;
   height: 3px;
   margin-bottom: 30px;
+}
+
+.service-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.service-menu .service-menu-item {
+  width: 20%;
+  margin-right: 30px;
+}
+.service-menu .service-menu-item p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #c0b7b7;
+  margin-bottom: 30px;
+}
+.service-menu .service-menu-item .underline {
+  width: 100%;
+  height: 2px;
+  background-color: #c8c8c8;
+}
+.service-menu .service-menu-item.active p {
+  color: black;
+}
+.service-menu .service-menu-item.active .underline {
+  background-color: #f0361f;
 }
 
 /*# sourceMappingURL=styles.css.map */
