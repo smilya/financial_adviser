@@ -1323,7 +1323,7 @@ footer .second-floor p {
   margin-right: 45px;
 }
 
-.who-i-am h3, .who-i-am h4 {
+.who-i-am h3.who-i-am__firstHeading {
   text-align: left;
 }
 .who-i-am .who-i-am__intro {
@@ -1438,6 +1438,9 @@ footer .second-floor p {
   top: 50%;
   transform: translate(0, -50%);
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .slider .slider-button.slider-button--right {
   right: -27px;

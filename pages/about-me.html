@@ -21,7 +21,7 @@
 
   <section class="who-i-am">
     <div class="container">
-      <h3 class="mb-20">Капустянский Иван</h3>
+      <h3 class="who-i-am__firstHeading mb-20">Капустянский Иван</h3>
       <h4 class="mb-60">Персональный финансовый консультант</h4>
 
       <div class="who-i-am__intro mb-100">
@@ -106,25 +106,28 @@
             <div>
               <h6>Исходные данные</h6>
               <div class="underline"></div>
-              <p class="slider-who-i-am__data">В течение нескольких лет средствами клиента распоряжалась управляющая компания швейцарского банка, которая потеряла около 20% изначального капитала. Также ежегодно в рамках договора доверительного управленияс клиента снимали 1,5% от суммы активов за управление и 10% вознаграждения за успех (success fee).</p>
+              <!-- <p class="slider-who-i-am__initialData">В течение нескольких лет средствами клиента распоряжалась управляющая компания швейцарского банка, которая потеряла около 20% изначального капитала. Также ежегодно в рамках договора доверительного управленияс клиента снимали 1,5% от суммы активов за управление и 10% вознаграждения за успех (success fee).</p> -->
+              <p class="slider-who-i-am__initialData"></p>
             </div>
             <div>
               <h6>Мои рекомендации</h6>
               <div class="underline"></div>
-              <p class="slider-who-i-am__recomendations"><b>1.</b> Вывести деньги из управляющей компании банка и открыть брокерский счет в иностранной компании.<br><b>2.</b> Купить ETF, в структуру которых входят среднесрочные еврооблигации, и небольшой объем ETF на индекс SP500 для увеличения доходности.</p>
+              <!-- <p class="slider-who-i-am__recomendations"><b>1.</b> Вывести деньги из управляющей компании банка и открыть брокерский счет в иностранной компании.<br><b>2.</b> Купить ETF, в структуру которых входят среднесрочные еврооблигации, и небольшой объем ETF на индекс SP500 для увеличения доходности.</p> -->
+              <p class="slider-who-i-am__recomendations"></p>
             </div>
             <div>
               <h6>Итоги</h6>
               <div class="underline"></div>
-              <div class="slider-who-i-am__outcome"><b>1.</b> С начала 2018 года чистая ежегодная доходность портфеля — более 6% в долларах США.</div>
+              <!-- <p class="slider-who-i-am__outcome"><b>1.</b> С начала 2018 года чистая ежегодная доходность портфеля — более 6% в долларах США.</p> -->
+              <p class="slider-who-i-am__outcome"></p>
             </div>
           </div>
 
         </div>
         <div class="slider-pagination">
-          <div class="slider-pagination-dot active"></div>
+<!--           <div class="slider-pagination-dot active"></div>
           <div class="slider-pagination-dot"></div>
-          <div class="slider-pagination-dot"></div>
+          <div class="slider-pagination-dot"></div> -->
         </div>
       </div>
     </div>
@@ -138,6 +141,8 @@
 <script src="../js/common-blocks.js"></script>
 <script src="../js/common-interaction.js"></script>
 <script src="../js/consultation.js"></script>
+<script src="../data/who-i-am-data.js"></script>
+<script src="../js/who-i-am-slider.js"></script>
 <script>
   let activeMenus = document.querySelectorAll('.menu__about-me');
   activeMenus[0].classList.add('active');
