@@ -94,3 +94,29 @@
     }
   }
 }
+
+.slider-service-opinion__container {
+  height: 335px;
+  padding: 40px 80px;
+
+  h4 {
+    margin-bottom: 20px;
+  }
+
+  .sub-heading {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .outcome-container {
+    .outcome-item {
+      display: inline-block;
+      margin-right: 25px;
+      span {
+        color: $color-danger;
+        margin-left: 8px;
+      }
+    }
+  }
+}

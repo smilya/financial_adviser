@@ -48,3 +48,22 @@
   &:-moz-placeholder           {color: $placeholder;}/* Firefox 18- */
   &:-ms-input-placeholder      {color: $placeholder;}
 }
+
+@mixin li-squareRed {
+  list-style-type: square;
+  color: $color-danger;
+  font-size: 32px;
+  span {
+    color: black;
+    font-size: 18px;
+  }
+}
+
+@mixin round-background {
+  display: block;
+  width: 32px;
+  height: 32px; 
+  background-color: $color-danger;
+  border-radius: 50%;
+  position: relative;
+}

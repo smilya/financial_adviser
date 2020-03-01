@@ -75,15 +75,13 @@
       flex-wrap: wrap;
 
       li {
+        @include li-squareRed;
         flex-basis: 40%;
-        list-style-type: square;
         margin-left: 8%;
         margin-right: 2%;
         margin-bottom: 50px;
         padding-left: 12px;
         padding-right: 12px;
-        color: $color-danger;
-        font-size: 32px;
         position: relative;
 
         .certificates__title {

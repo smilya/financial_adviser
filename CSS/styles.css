@@ -1395,16 +1395,20 @@ footer .second-floor p {
   flex-wrap: wrap;
 }
 .who-i-am .who-i-am__certificates ul li {
-  flex-basis: 40%;
   list-style-type: square;
+  color: #f0361f;
+  font-size: 32px;
+  flex-basis: 40%;
   margin-left: 8%;
   margin-right: 2%;
   margin-bottom: 50px;
   padding-left: 12px;
   padding-right: 12px;
-  color: #f0361f;
-  font-size: 32px;
   position: relative;
+}
+.who-i-am .who-i-am__certificates ul li span {
+  color: black;
+  font-size: 18px;
 }
 .who-i-am .who-i-am__certificates ul li .certificates__title {
   font-size: 22px;
@@ -1499,6 +1503,27 @@ footer .second-floor p {
   margin-bottom: 30px;
 }
 
+.slider-service-opinion__container {
+  height: 335px;
+  padding: 40px 80px;
+}
+.slider-service-opinion__container h4 {
+  margin-bottom: 20px;
+}
+.slider-service-opinion__container .sub-heading {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.slider-service-opinion__container .outcome-container .outcome-item {
+  display: inline-block;
+  margin-right: 25px;
+}
+.slider-service-opinion__container .outcome-container .outcome-item span {
+  color: #f0361f;
+  margin-left: 8px;
+}
+
 .service-menu {
   display: flex;
   justify-content: space-between;
@@ -1525,6 +1550,108 @@ footer .second-floor p {
 }
 .service-menu .service-menu-item.active .underline {
   background-color: #f0361f;
+}
+
+.service-opinion iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 920px;
+  height: 530px;
+}
+.service-opinion .opinion-intro > p {
+  margin-bottom: 30px;
+}
+.service-opinion h5 {
+  font-size: 30px;
+}
+.service-opinion ul {
+  margin-left: 30px;
+}
+.service-opinion ul li {
+  list-style-type: square;
+  color: #f0361f;
+  font-size: 32px;
+  margin-bottom: 13px;
+}
+.service-opinion ul li span {
+  color: black;
+  font-size: 18px;
+}
+.service-opinion ul.consult-stages {
+  margin-left: 0;
+}
+.service-opinion ul.consult-stages li {
+  list-style: none;
+  display: block;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.service-opinion ul.consult-stages li .consult-stages-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 48px 20px 28px;
+  align-items: center;
+}
+.service-opinion ul.consult-stages li .consult-stages-main .consult-stages-background {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #f0361f;
+  border-radius: 50%;
+  position: relative;
+}
+.service-opinion ul.consult-stages li .consult-stages-main .consult-stages-background span {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service-opinion ul.consult-stages li .consult-stages-main .consult-stages-heading {
+  font-weight: 600;
+  flex-grow: 1;
+  margin-left: 30px;
+}
+.service-opinion ul.consult-stages li .consult-stages-main .consult-stages__arrows {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+.service-opinion ul.consult-stages li .consult-stages-main .consult-stages__arrows img {
+  width: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service-opinion ul.consult-stages li .consult-stages-addition {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 120px 40px 90px;
+}
+.service-opinion ul.consult-costs-n-terms li {
+  border-radius: 0;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+.service-opinion ul.consult-costs-n-terms li .consult-stages-main {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.service-opinion ul.consult-costs-n-terms li .consult-stages-main img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service-opinion ul.consult-costs-n-terms li p {
+  color: #c0b7b7;
+  font-size: 14px;
+  padding: 20px 120px 20px 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

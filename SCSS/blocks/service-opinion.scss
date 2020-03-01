@@ -1,0 +1,111 @@
+.service-opinion {
+  iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 920px; 
+    height: 530px;
+  }
+
+  .opinion-intro>p {
+    margin-bottom: 30px;
+  }
+
+  h5 {
+    font-size: 30px;
+  }
+
+  ul {
+    margin-left: 30px;
+    
+    li {
+      @include li-squareRed;
+      margin-bottom: 13px;
+    }
+  }
+
+  ul.consult-stages {
+    margin-left: 0;
+    
+    li {
+      list-style: none;
+      display: block;
+      background-color: #fff;
+      border-radius: 10px;
+
+      .consult-stages-main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 48px 20px 28px;
+        align-items: center;
+
+        .consult-stages-background {
+        @include round-background;
+
+          span {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .consult-stages-heading {
+          font-weight: 600;
+          flex-grow: 1;
+          margin-left: 30px;
+        }
+
+        .consult-stages__arrows {
+          position: relative;
+          width: 22px;
+          height: 22px;
+
+          img {
+            width: 22px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+
+      .consult-stages-addition {
+        color: black;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 10px 120px 40px 90px;
+      }      
+    }    
+  }
+
+  ul.consult-costs-n-terms {
+    li {
+      border-radius: 0;
+      padding-top: 30px;  
+      margin-bottom: 0;    
+
+      .consult-stages-main {
+       padding-top: 5px;
+       padding-bottom: 5px;
+
+       img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+      }
+
+      p {
+        color: #c0b7b7;
+        font-size: 14px;
+        padding: 20px 120px 20px 30px;
+      }
+    }
+  }
+}
