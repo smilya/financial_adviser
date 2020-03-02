@@ -40,3 +40,11 @@ document.querySelector('.slider-button--left').onclick = function() {
   }
   switchCase(currentCase);
 }
+
+document.getElementById('showDiploma').onclick = function() {
+  let modal = document.createElement('div');
+  modal.innerHTML = '<div id="blur-over"></div><div class="modal-window modal-window--documents"><div class="close-cross close-cross-documents">×</div><img class="modal-window-image" src="../images/who-i-am/diploma.jpg" alt="document"></div>';
+  document.querySelector('.who-i-am__certificates').prepend(modal);
+  document.getElementById("blur-over").onclick = function() {modal.remove();};
+  document.querySelector(".modal-window").onclick = function() {modal.remove();};
+}

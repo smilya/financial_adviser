@@ -1415,10 +1415,25 @@ footer .second-floor p {
   font-weight: 700;
   margin-bottom: 25px;
   color: black;
+  cursor: pointer;
+}
+.who-i-am .who-i-am__certificates ul li .certificates__title:hover {
+  color: #f0361f;
 }
 .who-i-am .who-i-am__certificates ul li .certificates__text {
   color: #676767;
   font-size: 18px;
+}
+.who-i-am .who-i-am__certificates .modal-window--documents {
+  line-height: 0;
+}
+.who-i-am .who-i-am__certificates .modal-window--documents .close-cross-documents {
+  position: absolute;
+  top: 4%;
+  left: 98%;
+}
+.who-i-am .who-i-am__certificates .modal-window--documents img {
+  width: 100%;
 }
 
 .slider .slider-body {
