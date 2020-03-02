@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <title>Решение</title>
+</head>
+<body>
+  <header></header>
+  <menu class="menu--header"></menu>
+
+  <section class="page-title">
+    <div class="container">
+      <span><a href="../index.html">Главная</a> &ndash; <a href="service.html">Услуги</a> &ndash; <span>Индивидуальное решение</span></span>
+      <h1 class="who-i-am__firstHeading mb-20">Разработка индивидуального решения</h1>
+      <p class="mb-40">Слоган</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="service-menu mb-80"></div>
+    </div>
+  </section>
+
+  <section class="service-consultation">
+    <div class="container">
+   
+    </div>
+  </section>
+
+  <section class="consultation"></section>
+  <menu class="menu--footer"></menu>
+  <footer></footer>
+</body>
+
+<script src="../js/common-blocks.js"></script>
+<script src="../js/common-interaction.js"></script>
+<script src="../js/consultation.js"></script>
+<script src="../js/service-menu.js"></script>
+<script>
+  let activeMenus = document.querySelectorAll('.menu__service');
+  activeMenus[0].classList.add('active');
+  activeMenus[1].classList.add('active');
+  document.querySelector('.service-item-solution').classList.add('active');
+</script>
+
+</html>
