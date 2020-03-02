@@ -1518,6 +1518,7 @@ footer .second-floor p {
 .slider-service-opinion__container .outcome-container .outcome-item {
   display: inline-block;
   margin-right: 25px;
+  cursor: pointer;
 }
 .slider-service-opinion__container .outcome-container .outcome-item span {
   color: #f0361f;
@@ -1545,10 +1546,10 @@ footer .second-floor p {
   height: 2px;
   background-color: #c8c8c8;
 }
-.service-menu .service-menu-item.active p {
+.service-menu .service-menu-item.active p, .service-menu .service-menu-item:hover p {
   color: black;
 }
-.service-menu .service-menu-item.active .underline {
+.service-menu .service-menu-item.active .underline, .service-menu .service-menu-item:hover .underline {
   background-color: #f0361f;
 }
 
@@ -1617,8 +1618,9 @@ footer .second-floor p {
 }
 .service-opinion ul.consult-stages li .consult-stages-main .consult-stages__arrows {
   position: relative;
-  width: 22px;
-  height: 22px;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
 }
 .service-opinion ul.consult-stages li .consult-stages-main .consult-stages__arrows img {
   width: 22px;

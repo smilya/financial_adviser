@@ -113,6 +113,7 @@
     .outcome-item {
       display: inline-block;
       margin-right: 25px;
+      cursor: pointer;
       span {
         color: $color-danger;
         margin-left: 8px;
