@@ -41,10 +41,31 @@ document.querySelector('.slider-button--left').onclick = function() {
   switchCase(currentCase);
 }
 
-document.getElementById('showDiploma').onclick = function() {
+function showDocument(innerHTML) {
   let modal = document.createElement('div');
-  modal.innerHTML = '<div id="blur-over"></div><div class="modal-window modal-window--documents"><div class="close-cross close-cross-documents">×</div><img class="modal-window-image" src="../images/who-i-am/diploma.jpg" alt="document"></div>';
+  modal.innerHTML = innerHTML;
   document.querySelector('.who-i-am__certificates').prepend(modal);
   document.getElementById("blur-over").onclick = function() {modal.remove();};
   document.querySelector(".modal-window").onclick = function() {modal.remove();};
 }
+
+document.getElementById('showDiploma').onclick = function() {
+  inner = '<div id="blur-over"></div><div class="modal-window modal-window--documents"><div class="close-cross close-cross-documents">×</div><img class="modal-window-image" src="../images/who-i-am/diploma.jpg" alt="document"></div>';
+  showDocument(inner);
+}
+
+document.getElementById('showREU').onclick = function() {
+  let inner = '<div id="blur-over"></div><div class="modal-window modal-window--documents"><div class="close-cross close-cross-documents">×</div><img class="modal-window-image" src="../images/who-i-am/diploma-REU.jpg" alt="document"></div>';
+  showDocument(inner);
+}
+
+document.getElementById('showFSFR_1').onclick = function() {
+  let inner = '<div id="blur-over"></div><div class="modal-window modal-window--documents modal-window--verticalDoc"><div class="close-cross close-cross-documents">×</div><img class="modal-window-image" src="../images/who-i-am/FSFR-1.jpg" alt="document"></div>';
+  showDocument(inner);
+}
+
+document.getElementById('showFSFR_5').onclick = function() {
+  let inner = '<div id="blur-over"></div><div class="modal-window modal-window--documents modal-window--verticalDoc"><div class="close-cross close-cross-documents">×</div><img class="modal-window-image" src="../images/who-i-am/FSFR-5.jpg" alt="document"></div>';
+  showDocument(inner);
+}
+

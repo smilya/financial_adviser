@@ -89,10 +89,10 @@
           font-weight: 700;
           margin-bottom: 25px;
           color: black;  
-          cursor: pointer;
           
-          &:hover {
+          &.certificates-title--linked:hover {
             color: $color-danger;
+            cursor: pointer;
           }
         }
 
@@ -105,7 +105,7 @@
     
     .modal-window--documents {
       line-height: 0;
-      
+        
       .close-cross-documents {
         position: absolute;
         top: 4%;
@@ -113,6 +113,11 @@
       }
       img {
         width: 100%;
+      }
+
+      &.modal-window--verticalDoc {
+        width: 35%;
+        top: 50%;
       }
     }
   }

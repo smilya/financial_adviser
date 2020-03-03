@@ -1415,10 +1415,10 @@ footer .second-floor p {
   font-weight: 700;
   margin-bottom: 25px;
   color: black;
-  cursor: pointer;
 }
-.who-i-am .who-i-am__certificates ul li .certificates__title:hover {
+.who-i-am .who-i-am__certificates ul li .certificates__title.certificates-title--linked:hover {
   color: #f0361f;
+  cursor: pointer;
 }
 .who-i-am .who-i-am__certificates ul li .certificates__text {
   color: #676767;
@@ -1434,6 +1434,10 @@ footer .second-floor p {
 }
 .who-i-am .who-i-am__certificates .modal-window--documents img {
   width: 100%;
+}
+.who-i-am .who-i-am__certificates .modal-window--documents.modal-window--verticalDoc {
+  width: 35%;
+  top: 50%;
 }
 
 .slider .slider-body {
@@ -1568,48 +1572,48 @@ footer .second-floor p {
   background-color: #f0361f;
 }
 
-.service-opinion iframe {
+.service-main iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 920px;
   height: 530px;
 }
-.service-opinion .opinion-intro > p {
+.service-main .service-intro > p {
   margin-bottom: 30px;
 }
-.service-opinion h5 {
+.service-main h5 {
   font-size: 30px;
 }
-.service-opinion ul {
+.service-main ul {
   margin-left: 30px;
 }
-.service-opinion ul li {
+.service-main ul li {
   list-style-type: square;
   color: #f0361f;
   font-size: 32px;
   margin-bottom: 13px;
 }
-.service-opinion ul li span {
+.service-main ul li span {
   color: black;
   font-size: 18px;
 }
-.service-opinion ul.consult-stages {
+.service-main ul.consult-stages {
   margin-left: 0;
 }
-.service-opinion ul.consult-stages li {
+.service-main ul.consult-stages li {
   list-style: none;
   display: block;
   background-color: #fff;
   border-radius: 10px;
 }
-.service-opinion ul.consult-stages li .consult-stages-main {
+.service-main ul.consult-stages li .consult-stages-main {
   display: flex;
   justify-content: space-between;
   padding: 20px 48px 20px 28px;
   align-items: center;
 }
-.service-opinion ul.consult-stages li .consult-stages-main .consult-stages-background {
+.service-main ul.consult-stages li .consult-stages-main .consult-stages-background {
   display: block;
   width: 32px;
   height: 32px;
@@ -1617,7 +1621,7 @@ footer .second-floor p {
   border-radius: 50%;
   position: relative;
 }
-.service-opinion ul.consult-stages li .consult-stages-main .consult-stages-background span {
+.service-main ul.consult-stages li .consult-stages-main .consult-stages-background span {
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -1626,46 +1630,46 @@ footer .second-floor p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.service-opinion ul.consult-stages li .consult-stages-main .consult-stages-heading {
+.service-main ul.consult-stages li .consult-stages-main .consult-stages-heading {
   font-weight: 600;
   flex-grow: 1;
   margin-left: 30px;
 }
-.service-opinion ul.consult-stages li .consult-stages-main .consult-stages__arrows {
+.service-main ul.consult-stages li .consult-stages-main .consult-stages__arrows {
   position: relative;
   width: 40px;
   height: 30px;
   cursor: pointer;
 }
-.service-opinion ul.consult-stages li .consult-stages-main .consult-stages__arrows img {
+.service-main ul.consult-stages li .consult-stages-main .consult-stages__arrows img {
   width: 22px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.service-opinion ul.consult-stages li .consult-stages-addition {
+.service-main ul.consult-stages li .consult-stages-addition {
   color: black;
   font-size: 16px;
   line-height: 24px;
   padding: 10px 120px 40px 90px;
 }
-.service-opinion ul.consult-costs-n-terms li {
+.service-main ul.consult-costs-n-terms li {
   border-radius: 0;
   padding-top: 30px;
   margin-bottom: 0;
 }
-.service-opinion ul.consult-costs-n-terms li .consult-stages-main {
+.service-main ul.consult-costs-n-terms li .consult-stages-main {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.service-opinion ul.consult-costs-n-terms li .consult-stages-main img {
+.service-main ul.consult-costs-n-terms li .consult-stages-main img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.service-opinion ul.consult-costs-n-terms li p {
+.service-main ul.consult-costs-n-terms li p {
   color: #c0b7b7;
   font-size: 14px;
   padding: 20px 120px 20px 30px;

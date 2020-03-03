@@ -1,20 +1,14 @@
 let cases = [
   {
     title: "Кейс 1",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ipsum voluptatibus inventore expedita possimus excepturi voluptate totam, assumenda illo unde soluta quae facere sapiente iusto, eos sunt atque quo sit. Officia, placeat ipsam. Dicta nemo provident hic dolore libero eos sed eum at. Ipsum obcaecati, nulla enim dolorum id repudiandae cum veritatis cumque modi labore!",
-    analytics: "",
-    report: "",
+    text: "VIP-клиент инвестиционной компании получил предложение по покупке пакета облигаций «Азбуки вкуса‎». Ему предоставили рекомендации на покупку бумаг, а также ряд финансовых отчетов. Но клиент решил не торопиться и заказал услугу «Второе мнение‎», чтобы получить подробный финансовый анализ компании и конечную рекомендацию по облигациям.",
+    analytics: "analytics-azbuka_vkusa.xlsx",
+    report: "report-azbuka_vkusa.pdf",
   },
-  {
+ /*  {
     title: "Кейс 2",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ipsum voluptatibus inventore expedita possimus excepturi voluptate totam, assumenda illo unde soluta quae facere sapiente iusto, eos sunt atque quo sit. Officia, placeat ipsam. Dicta nemo provident hic dolore libero eos sed eum at. Ipsum obcaecati, nulla enim dolorum id repudiandae cum veritatis cumque modi labore!",
+    text: "",
     analytics: "",
     report: "",
-  },
-  {
-    title: "Кейс 3",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ipsum voluptatibus inventore expedita possimus excepturi voluptate totam, assumenda illo unde soluta quae facere sapiente iusto, eos sunt atque quo sit. Officia, placeat ipsam. Dicta nemo provident hic dolore libero eos sed eum at. Ipsum obcaecati, nulla enim dolorum id repudiandae cum veritatis cumque modi labore!",
-    analytics: "",
-    report: "",
-  },
+  }, */
 ];

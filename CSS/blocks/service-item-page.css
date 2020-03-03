@@ -3,7 +3,7 @@
  * 22 |       @include li-squareRed;
  *    |       ^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   scss\blocks\service-opinion.scss 22:7  root stylesheet */
+ *   scss\blocks\service-item-page.scss 22:7  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 22 \2502        @include li-squareRed;\d\a    \2502        ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\blocks\\service-opinion.scss 22:7  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 22 \2502        @include li-squareRed;\d\a    \2502        ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\blocks\\service-item-page.scss 22:7  root stylesheet";
 }
