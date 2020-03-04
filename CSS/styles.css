@@ -1426,6 +1426,8 @@ footer .second-floor p {
 }
 .who-i-am .who-i-am__certificates .modal-window--documents {
   line-height: 0;
+  height: 90vh;
+  top: 50%;
 }
 .who-i-am .who-i-am__certificates .modal-window--documents .close-cross-documents {
   position: absolute;
@@ -1433,11 +1435,8 @@ footer .second-floor p {
   left: 98%;
 }
 .who-i-am .who-i-am__certificates .modal-window--documents img {
-  width: 100%;
-}
-.who-i-am .who-i-am__certificates .modal-window--documents.modal-window--verticalDoc {
-  width: 35%;
-  top: 50%;
+  width: auto;
+  height: 100%;
 }
 
 .slider .slider-body {
