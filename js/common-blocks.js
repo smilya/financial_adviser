@@ -3,7 +3,7 @@
 let header = `
   <div class="container">
         
-    <a href="../index.html">
+    <a  id="topLinkToIndex" href="../index.html">
       <img class="logo" src="../images/logo/logo-light.svg" alt="logo">
     </a>
 
@@ -31,7 +31,12 @@ let header = `
 `;
 
 let menuHeader = `
-  <div class="container">
+    <div class="container">
+      <div class="burger">
+      <div class="burger-bar"></div>
+      <div class="burger-bar burger-bar--medium"></div>
+      <div class="burger-bar"></div>
+    </div>
     <ul>
       <a href="../pages/service.html">
         <li class="menu__service">услуги</li>
@@ -68,7 +73,7 @@ let consultation = `
       <img src="../images/consultation/consultation-image.jpg" alt="consultation-image">
       
       <div>
-        <h2>Запишитесь<br>на персональную консультацию</h2>
+        <h2>Запишитесь <br>на персональную консультацию</h2>
         <h6>Получите ответы на самые важные<br>финансовые вопросы</h6>
         
         <form id="consultationForm">
@@ -145,12 +150,12 @@ let footer = `
           </div>
         </div>
 
-        <form>
+        <div>
           <input type="email" placeholder="Ваш e-mail" id="subscribe-email">
           <div class="link-banner"  id="subscribe-button">
             <img src="../images/banners/arrow-next-white.png" alt="arrow-next">
           </div>
-        </form>            
+        </div>            
       </div>
     </div>
 

@@ -1,0 +1,14 @@
+@media screen and (max-width: 1350px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/*# sourceMappingURL=helpers-general.css.map */

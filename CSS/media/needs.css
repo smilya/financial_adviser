@@ -1,0 +1,128 @@
+@media screen and (max-width: 1520px) {
+  .needs .container {
+    margin: 0 auto;
+  }
+  .needs .container .why-adviser {
+    padding-left: 0;
+    padding-bottom: 0;
+    background-color: inherit;
+  }
+  .needs .container .why-adviser div h2 {
+    font-size: 34px;
+    line-height: 41px;
+    max-width: 300px;
+    white-space: initial;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .needs .container .why-adviser div p {
+    margin-bottom: 0;
+  }
+  .needs .container .why-adviser div p br {
+    display: none;
+  }
+  .needs .container .why-adviser img {
+    width: 47vw;
+    margin-left: 10px;
+    height: 100%;
+  }
+  .needs .container .lists {
+    padding-top: 60px;
+    padding-left: 0;
+    top: -550px;
+    margin-bottom: -550px;
+  }
+  .needs .container .lists ul {
+    width: 90%;
+  }
+  .needs .container .lists ul li {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .needs .container .lists ul li br {
+    display: none;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .needs .container .lists {
+    top: -520px;
+  }
+}
+@media screen and (max-width: 1325px) {
+  .needs .container .lists {
+    top: -450px;
+    margin-bottom: -450px;
+  }
+  .needs .container .lists h4 {
+    margin-bottom: 30px;
+  }
+  .needs .container .lists ul li {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1275px) {
+  .needs .container .why-adviser img {
+    width: 32vw;
+  }
+
+  .needs .container .lists {
+    top: -200px;
+    margin-bottom: -250px;
+  }
+  .needs .container .lists h4 {
+    margin-bottom: 40px;
+  }
+  .needs .container .lists ul li {
+    height: auto;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1165px) {
+  .needs .container .lists {
+    top: -150px;
+    margin-bottom: -200px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .needs .container .why-adviser img {
+    width: 47vw;
+  }
+
+  .needs .container .lists {
+    top: 0;
+    margin-bottom: -50px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .needs .container .why-adviser div h2 {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 765px) {
+  .needs .container {
+    width: 100%;
+  }
+  .needs .container .why-adviser {
+    flex-direction: column-reverse;
+    background-color: #fff;
+  }
+  .needs .container .why-adviser div h2 {
+    padding-top: 40px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .needs .container .why-adviser img {
+    width: calc(100% - 20px);
+  }
+  .needs .container .lists {
+    background-color: #fff;
+    padding-bottom: 40px;
+  }
+  .needs .container .lists ul li {
+    height: auto;
+    margin-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=needs.css.map */

@@ -1,0 +1,113 @@
+@media screen and (max-width: 1350px) {
+  .service {
+    margin-bottom: 70px;
+    .row {
+      .item-main {
+        width: $width-duet;
+        background-size: 100%;
+        background-position: center 0;
+        background-image: url(./../images/service/image-item-main-media.jpg);
+        background-repeat: no-repeat;
+
+        h4 {
+          font-size: 24px;
+          line-height: 30px;
+          text-align: center;    
+          position: static;      
+          margin-top: 64%;
+        }
+
+        .go-banner {
+          width: 100%;
+        }
+      }
+
+      .item {
+        width: $width-duet;
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: 765px) {
+  .service {
+    padding-top: 65px;
+    margin-bottom: 100px;
+
+    h3 {
+      font-size: 28px;
+    }
+
+    .row {
+      .item-main {
+        width: 100%;
+
+        .go-banner {
+          position: relative;
+          top: 96px;   
+          margin-bottom: 96px;  
+        }
+      }
+
+      .item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .service .row .item-main .go-banner {
+    top: 85px;
+    margin-bottom: 86px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .service .row .item-main .go-banner {
+    top: 75px;
+    margin-bottom: 76px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .service .row .item-main .go-banner {
+    top: 65px;
+    margin-bottom: 66px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .service .row .item-main .go-banner {
+    top: 55px;
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .service .row .item-main .go-banner {
+    top: 45px;
+    margin-bottom: 46px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .service .row .item-main .go-banner {
+    top: 35px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .service .row .item-main .go-banner {
+    top: 25px;
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .service .row .item-main .go-banner {
+    top: 15px;
+    margin-bottom: 16px;
+  }
+}

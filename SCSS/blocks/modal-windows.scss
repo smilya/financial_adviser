@@ -6,7 +6,7 @@
   right: 0;
   z-index: 5;
   opacity: 40%;
-  background-color: black;  
+  background-color: black;
 }
 
 .modal-window {
@@ -64,6 +64,10 @@
       .link-banner {
         padding-left: 68px;
         padding-right: 67px;
+
+        span {
+          white-space: nowrap;
+        }
       }
     }
   }

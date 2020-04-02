@@ -1,0 +1,40 @@
+@media screen and (max-width: 1350px) {
+  .publications {
+    margin-bottom: 50px;
+
+    h3 {
+      margin-bottom: 60px;
+    }
+    
+    .items-box {
+      .item {
+        width: 49%;
+
+        & > div:first-of-type {
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          h5 {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .publications {
+    
+    h3 {
+      font-size: 28px;
+      margin-bottom: 50px;
+    }
+    
+    .items-box {
+      .item {
+        width: 100%;
+      }
+    }
+  }
+}

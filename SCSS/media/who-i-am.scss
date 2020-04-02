@@ -1,0 +1,105 @@
+@media screen and (max-width: 1350px) {  
+  .who-i-am {
+    .who-i-am__intro {
+      flex-direction: row-reverse;
+      align-items: start;
+      margin-bottom: 80px;
+
+      .who-i-am__slogan {
+        margin-left: 0;
+        margin-right: 2%;
+
+        h4 {
+          margin-bottom: 20px;
+        }
+      }
+
+      .who-i-am__foo {
+        min-width: 45%;
+      }
+    }
+
+    .who-i-am__medals {
+      flex-wrap: wrap;
+
+      .medals__item {
+        min-width: $width-trio;
+      }
+    }
+
+    .who-i-am__certificates {
+      ul {
+        li .certificates__title {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .container h3 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
+
+  
+}
+
+@media screen and (max-width: 950px) {
+  .who-i-am {    
+    .who-i-am__medals {
+      .medals__item {
+        min-width: $width-duet;
+      }
+    } 
+    
+    .who-i-am__certificates {
+      margin-bottom: 80px;
+
+      ul {
+        li {
+          flex-basis: 100%;
+          padding-left: 0;
+          margin-left: 55px;
+        }
+      }
+    }
+  }
+}  
+
+
+
+@media screen and (max-width: 765px) {
+  .who-i-am {
+    .who-i-am__intro {
+      flex-direction: column;
+
+      .who-i-am__foo {
+        min-width: 100%;
+        height: 65vw;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .who-i-am {    
+    .who-i-am__medals {
+      margin-bottom: 80px;
+
+      .medals__item {
+        min-width: 100%;
+
+        .medal-body {
+          transform: scale(1.4);
+        }
+      }
+
+      .medals__item:not(:last-of-type) {
+        margin-bottom: 80px;
+      }
+    }    
+  }
+} 

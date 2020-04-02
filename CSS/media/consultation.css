@@ -1,0 +1,113 @@
+@media screen and (max-width: 1370px) {
+  .consultation .container div div h2 {
+    font-size: 34px;
+    line-height: 41px;
+    max-width: 320px;
+  }
+  .consultation .container div div h2 br {
+    display: none;
+  }
+  .consultation .container div div h6 {
+    position: static;
+    text-align: left;
+    max-width: 320px;
+    font-size: 18px;
+    line-height: 160%;
+  }
+  .consultation .container div div h6 br {
+    display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .consultation .container > div > img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1252px) {
+  .consultation .container div div {
+    padding-left: 5%;
+  }
+
+  .consultation .container div div input {
+    max-width: 342px;
+  }
+  .consultation .container div div .link-banner {
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+  .consultation .container div div .link-banner img {
+    display: none;
+  }
+  .consultation .container div div .link-banner span {
+    margin-right: 0;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1252px) {
+  .consultation .container div div {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .consultation .container div div {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .consultation .container > div > img {
+    width: 55%;
+  }
+  .consultation .container > div div {
+    padding-left: 2%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .consultation {
+    background-color: #fff;
+    padding-bottom: 10px;
+  }
+  .consultation .container > div {
+    padding-top: 50px;
+  }
+  .consultation .container > div > img {
+    display: none;
+  }
+  .consultation .container > div > div {
+    padding-left: 0;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+  .consultation .container > div > div input {
+    max-width: 500px;
+  }
+  .consultation .container > div > div .link-banner {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .consultation .container > div > div input {
+    width: 100%;
+  }
+  .consultation .container > div > div .link-banner {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .consultation .container > div > div {
+    margin: 0;
+    width: 100%;
+  }
+  .consultation .container > div > div input {
+    width: 100% !important;
+  }
+  .consultation .container > div > div .link-banner {
+    margin-top: 50px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*# sourceMappingURL=consultation.css.map */

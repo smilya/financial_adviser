@@ -113,6 +113,9 @@ textarea.error {
   display: none;
 }
 
+.visible {
+  display: block !important;
+}
 a {
   text-decoration: none;
   color: inherit;

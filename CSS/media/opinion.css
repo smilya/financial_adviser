@@ -1,0 +1,36 @@
+@media screen and (max-width: 1350px) {
+  .opinion .mass-media-panel {
+    justify-content: start;
+  }
+  .opinion .mass-media-panel .mass-media {
+    width: 25%;
+    background-size: 55%;
+    height: auto;
+    padding: 8% 0;
+  }
+}
+@media screen and (max-width: 765px) {
+  .opinion .container {
+    padding: 0;
+  }
+  .opinion .container h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .opinion .container p {
+    font-size: 18px;
+    width: 250px;
+    margin: 0 auto 50px;
+  }
+  .opinion .container .mass-media-panel {
+    margin-bottom: 150px;
+  }
+  .opinion .container .mass-media-panel .mass-media {
+    width: 50%;
+    background-size: 45%;
+    height: auto;
+    padding: 15% 0;
+  }
+}
+
+/*# sourceMappingURL=opinion.css.map */

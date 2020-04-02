@@ -1,0 +1,19 @@
+@media screen and (max-width: 1350px) {
+  .page-title span {
+    display: none;
+  }
+  .page-title h1 {
+    font-size: 34px;
+    line-height: 40px;
+    margin-left: 0;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  .page-title p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 160%;
+  }
+}
+
+/*# sourceMappingURL=page-title.css.map */

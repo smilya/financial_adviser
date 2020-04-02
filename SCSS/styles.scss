@@ -18,6 +18,7 @@
 @import "blocks/about-me.scss";
 @import "blocks/consultation.scss";
 @import "blocks/footer.scss";
+@import "blocks/burger.scss";
 
 // used at other pages
 @import "blocks/page-title.scss";
@@ -31,3 +32,21 @@
 @import "blocks/slider.scss";
 @import "blocks/service-menu.scss";
 @import "blocks/service-item-page.scss";
+
+// media (adaptivity)
+@import "media/helpers-general.scss";
+@import "media/header.scss";
+@import "media/menu.scss";
+@import "media/intro.scss";
+@import "media/service.scss";
+@import "media/opinion.scss";
+@import "media/publications.scss";
+@import "media/video.scss";
+@import "media/needs.scss";
+@import "media/about-me.scss";
+@import "media/consultation.scss";
+@import "media/footer.scss";
+@import "media/modal-windows.scss";
+@import "media/page-title.scss";
+@import "media/who-i-am.scss";
+@import "media/slider.scss";

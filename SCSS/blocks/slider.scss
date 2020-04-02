@@ -76,7 +76,8 @@
   display: flex;
   justify-content: space-between;
   padding: 60px 35px;
-  height: 520px;
+  // Попробую не ограничивать высоту
+  // height: 520px;
 
   &>div {
     flex-basis: 33.33%;

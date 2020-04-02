@@ -61,6 +61,9 @@
   padding-left: 68px;
   padding-right: 67px;
 }
+.modal-window.modal-callMe .modal-window__main .link-banner span {
+  white-space: nowrap;
+}
 .modal-window.modal-info .modal-window__main {
   padding-left: 100px;
   padding-right: 100px;

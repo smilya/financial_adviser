@@ -1,0 +1,101 @@
+@media screen and (max-width: 1350px) {
+  .intro .intro__header {
+    flex-direction: column;
+  }
+  .intro .intro__header h1 {
+    font-size: 48px;
+  }
+  .intro .intro__header h3 br {
+    display: none;
+  }
+  .intro .intro__header div:first-of-type {
+    max-width: 690px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  .intro .intro__header .intro__image {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-55%);
+    display: block;
+  }
+  .intro .intro__header .logo {
+    display: none;
+  }
+  .intro article {
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .intro article > div {
+    padding: 0 40px;
+    margin-bottom: 0;
+  }
+  .intro article div.signature:nth-last-of-type(2) {
+    padding: 10px;
+  }
+  .intro article .signature h4 {
+    margin-top: 20px;
+  }
+  .intro article .signature p {
+    font-size: 14px;
+    max-width: 250px;
+    line-height: 150%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .intro .intro__header div:first-of-type {
+    padding-top: 60px;
+  }
+  .intro .intro__header div:first-of-type h1 {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .intro .intro__header div:first-of-type h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 125%;
+  }
+  .intro .intro__header div:first-of-type h6 {
+    font-size: 18px;
+    line-height: 160%;
+  }
+  .intro .intro__header div:first-of-type .link-banner {
+    width: 100%;
+    justify-content: center;
+  }
+  .intro .intro__header div:first-of-type .link-banner img {
+    display: none;
+  }
+  .intro .intro__header div:first-of-type .link-banner span {
+    margin-right: 0;
+    display: block;
+    text-align: center;
+  }
+  .intro .intro__header .intro__image {
+    width: 100%;
+    height: 100%;
+  }
+  .intro article {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .intro .signature:last-of-type {
+    flex-direction: column;
+  }
+  .intro .signature:last-of-type p {
+    position: relative;
+    z-index: 1;
+  }
+  .intro .signature:last-of-type img {
+    align-self: flex-end;
+    position: relative;
+    top: -20px;
+  }
+}
+
+/*# sourceMappingURL=intro.css.map */

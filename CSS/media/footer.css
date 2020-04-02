@@ -1,0 +1,69 @@
+@media screen and (max-width: 1350px) {
+  footer .first-floor {
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  footer .first-floor .services {
+    width: 49%;
+    margin-bottom: 40px;
+  }
+  footer .first-floor .services h5 {
+    margin-bottom: 15px;
+  }
+  footer .first-floor .services div p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  footer .first-floor .services div p br {
+    display: none;
+  }
+  footer .first-floor > div:first-of-type {
+    order: 1;
+  }
+  footer .second-floor p {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  footer .second-floor p br {
+    display: none;
+  }
+}
+@media screen and (max-width: 765px) {
+  footer .first-floor {
+    flex-direction: column;
+  }
+  footer .first-floor .subscribe {
+    order: -1;
+    margin-bottom: 60px;
+  }
+  footer .first-floor .services {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer .first-floor div .logo {
+    width: 100%;
+  }
+  footer .first-floor .subscribe {
+    width: 100%;
+  }
+  footer .first-floor .subscribe div img {
+    width: 35px;
+  }
+  footer .first-floor .subscribe div div {
+    padding-left: 15px !important;
+    padding-right: 1px;
+  }
+  footer .first-floor .subscribe div input {
+    padding-left: 10px;
+    padding-right: 0;
+    width: 100%;
+  }
+  footer .first-floor .subscribe div .link-banner {
+    padding-right: 15px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

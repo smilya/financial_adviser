@@ -1,0 +1,82 @@
+@media screen and (max-width: 765px) {
+  .who-i-am .who-i-am__certificates .modal-window--documents {
+    height: auto;
+    width: 100vw;
+  }
+
+  .who-i-am .who-i-am__certificates .modal-window--documents img {
+    width: 100vw;
+    height: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .modal-window.modal-callMe {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+  }
+  .modal-window.modal-callMe .modal-window__main input {
+    width: 100%;
+  }
+  .modal-window.modal-callMe .modal-window__main .link-banner {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .modal-window.modal-callMe {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+  }
+  .modal-window.modal-callMe .modal-window__main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .modal-window.modal-callMe .modal-window__main input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .modal-window.modal-callMe .modal-window__main .link-banner {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .modal-window.modal-callMe .modal-window__main .link-banner span {
+    margin-right: 0;
+  }
+  .modal-window.modal-callMe .modal-window__main .link-banner img {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  #consultationInfo .modal-window.modal-info {
+    width: 100%;
+    top: 50%;
+  }
+  #consultationInfo .modal-window.modal-info .modal-window__main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #consultationInfo .modal-window.modal-info .modal-window__main h3 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #subscribeInfo .modal-window.modal-info {
+    width: 100%;
+    top: 50%;
+  }
+  #subscribeInfo .modal-window.modal-info .modal-window__main {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #consultationInfo .modal-window.modal-info .modal-window__main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=modal-windows.css.map */

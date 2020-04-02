@@ -1,0 +1,61 @@
+@media screen and (max-width: 1350px) {
+  .slider {
+    .slider-body--who-i-am {
+      .slider-who-i-am__container {
+        flex-direction: column;
+
+        h6 {
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
+
+        .underline {
+          width: 160px;
+          height: 6px;
+        }
+
+        p {
+          margin-bottom: 40px;
+        }
+
+        div:last-of-type p {
+          margin-bottom: 0;
+        }
+      }
+
+      .slider-button {
+        top: calc(100% + 60px);
+
+        &.slider-button--left {
+          left: 0;
+        }
+
+        &.slider-button--right {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .slider {
+    .slider-body--who-i-am {
+      .slider-who-i-am__container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slider {
+    .slider-body--who-i-am {
+      div {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
