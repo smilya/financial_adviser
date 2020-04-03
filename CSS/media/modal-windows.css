@@ -78,5 +78,75 @@
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .faq #modal-askQuestion .modal-info {
+    width: 100%;
+    top: 50%;
+    height: 100%;
+  }
+  .faq #modal-askQuestion .modal-info h3 {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+  .faq #modal-askQuestion .modal-info form {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .faq #modal-askQuestion .modal-info form .input-container {
+    flex-direction: column;
+  }
+  .faq #modal-askQuestion .modal-info form .input-container input {
+    width: 100%;
+  }
+  .faq #modal-askQuestion .modal-info form textarea {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .faq #modal-askQuestion .modal-info form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .faq #modal-askQuestion .modal-info form {
+    width: 95%;
+  }
+  .faq #modal-askQuestion .modal-info form .link-banner {
+    width: 100%;
+    justify-content: center;
+  }
+  .faq #modal-askQuestion .modal-info form .link-banner img {
+    display: none;
+  }
+  .faq #modal-askQuestion .modal-info form .link-banner span {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .faq .modal-window.modal-info .modal-window__main {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+  }
+
+  .faq #modal-askQuestion .modal-info form {
+    width: 100%;
+  }
+  .faq #modal-askQuestion .modal-info form .link-banner {
+    width: 100%;
+    justify-content: center;
+  }
+  .faq #modal-askQuestion .modal-info form .link-banner img {
+    display: none;
+  }
+  .faq #modal-askQuestion .modal-info form .link-banner span {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .faq #modal-askQuestion .modal-info form textarea {
+    height: 160px;
+  }
+}
 
 /*# sourceMappingURL=modal-windows.css.map */

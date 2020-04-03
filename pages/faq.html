@@ -8,74 +8,78 @@
   <title>FAQ</title>
 </head>
 <body>
-  <header></header>
-  <menu class="menu--header"></menu>
+<div class="burgerSubstrat">
+    <header></header>
+    <menu class="menu--header"></menu>
+</div>
 
-  <section class="page-title mb-40">
-    <div class="container">
-      <span><a href="../index.html">Главная</a> &ndash; <span>FAQ</span></span>
-      <h1>Часто задаваемые вопросы</h1>
-    </div>
-  </section>
-
-  <section class="faq">
-    <div id="modal-askQuestion" class="hidden">
-      <div id="blur-over"></div>
-      <div class="modal-window modal-info">
-        <div class="close-cross__container"><div class="close-cross" id="close-info">×</div></div>
-        <div class="modal-window__main">
-          <h3>Задать вопрос</h3>
-          <form>
-            <div class="input-container">
-              <input type="text" name="name" placeholder="Как вас зовут">
-              <input type="text" name="email" placeholder="Ваш e-mail">
-            </div>
-            <textarea name="question" cols="30" rows="8" placeholder="Какой у вас вопрос?"></textarea>
-            <div class="link-banner" id="launchAskQuestion">
-              <span>отправить</span>
-              <img src="../images/banners/arrow-next-white.png" alt="arrow-next">
-            </div>
-          </form>
+<div class="burgerOpposite">
+    <section class="page-title mb-40">
+      <div class="container">
+        <span><a href="../index.html">Главная</a> &ndash; <span>FAQ</span></span>
+        <h1>Часто задаваемые вопросы</h1>
+      </div>
+    </section>
+  
+    <section class="faq">
+      <div id="modal-askQuestion" class="hidden">
+        <div id="blur-over"></div>
+        <div class="modal-window modal-info">
+          <div class="close-cross__container"><div class="close-cross" id="close-info">×</div></div>
+          <div class="modal-window__main">
+            <h3>Задать вопрос</h3>
+            <form>
+              <div class="input-container">
+                <input type="text" name="name" placeholder="Как вас зовут">
+                <input type="text" name="email" placeholder="Ваш e-mail">
+              </div>
+              <textarea name="question" cols="30" rows="8" placeholder="Какой у вас вопрос?"></textarea>
+              <div class="link-banner" id="launchAskQuestion">
+                <span>отправить</span>
+                <img src="../images/banners/arrow-next-white.png" alt="arrow-next">
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <h6 class="mb-60">Если вы не нашли ответа на свой вопрос, отправьте<br>его мне с помощью специальной формы.</h6>
-      <div class="link-banner mb-150" id="openAskQuestion">
-        <span>задать вопрос</span>
-        <img src="../images/banners/arrow-next-white.png" alt="arrow-next">
+  
+      <div class="container">
+        <h6 class="mb-60">Если вы не нашли ответа на свой вопрос, отправьте<br>его мне с помощью специальной формы.</h6>
+        <div class="link-banner mb-150" id="openAskQuestion">
+          <span>задать вопрос</span>
+          <img src="../images/banners/arrow-next-white.png" alt="arrow-next">
+        </div>
+  
+        <div class="faq-main mb-130">
+          <ul class="faq-tags tags">
+            <li>#Финансы</li>
+            <li>#Консультации</li>
+            <li>#Деньги</li>
+            <li>#Планирование</li>
+            <li>#Инвестиции</li>
+            <li>#Недвижимость</li>
+          </ul>
+          <div class="faq-panel"></div>
+        </div>
+  
       </div>
-
-      <div class="faq-main mb-130">
-        <ul class="faq-tags tags">
-          <li>#Финансы</li>
-          <li>#Консультации</li>
-          <li>#Деньги</li>
-          <li>#Планирование</li>
-          <li>#Инвестиции</li>
-          <li>#Недвижимость</li>
-        </ul>
-        <div class="faq-panel"></div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="consultation"></section>
-  <menu class="menu--footer"></menu>
-  <footer></footer>
+    </section>
+  
+    <section class="consultation"></section>
+    <menu class="menu--footer"></menu>
+    <footer></footer>
+</div>
 </body>
 
 <script src="../data/faq-data.js"></script>
 <script src="../js/faq.js"></script>
 <script src="../js/common-blocks.js"></script>
 <script src="../js/common-interaction.js"></script>
+<script src="../js/burger-menu.js"></script>
 <script src="../js/consultation.js"></script>
 <script>
   let activeMenus = document.querySelectorAll('.menu__faq');
   activeMenus[0].classList.add('active');
   activeMenus[1].classList.add('active');
 </script>
-
 </html>
