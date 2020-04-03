@@ -1,0 +1,121 @@
+@media screen and (max-width: 1350px) {
+  .contacts {
+    margin-bottom: 100px;
+
+    .container {
+      margin-top: -40px;
+      div {
+        padding-bottom: 0px;
+
+        div {
+          h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+          }        
+        }      
+      }
+
+      .contacts__contacts {
+        padding-left: 30px;
+
+        p {
+          padding-right: 20%;
+
+          br {
+            display: none;
+          }
+        }
+        
+
+        .contacts__oneline {
+          div {
+            display: block;
+
+            &:first-of-type {
+              margin-bottom: 25px;
+            }
+          }
+        }
+
+        .panel__socials {
+          a {
+            margin-right: 15px;
+          }
+        }
+      }
+
+      .contacts__bankDetails {
+        padding-left: 0;
+        padding-right: 30px;
+
+        .border-holder {
+          border-left: none;
+          margin-left: 0;
+          padding-left: 0;
+
+          table {
+            width: 100%;
+            padding-right: 20%;
+
+            tr {
+              display: flex;
+              flex-direction: column;
+
+              td:nth-last-of-type(2) {
+                padding: 0;
+              }
+
+              td.td-bank-name {
+                border-top: 1px dotted black;
+
+                & + td + td {
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts .container .contacts__contacts p {
+    padding-right: 10%;
+  }
+  .contacts .container .contacts__bankDetails .border-holder table {
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .contacts {
+    .container {
+      &>div {
+        display: flex;
+        flex-direction: column;
+
+        .contacts__contacts {
+          width: 100%;
+
+          p {
+            padding-right: 40%;
+          }
+        }
+
+        .contacts__bankDetails {
+          width: 100%;
+          padding-right: 30px;
+          padding-left: 30px;
+          margin-top: 70px;
+
+          .border-holder table {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

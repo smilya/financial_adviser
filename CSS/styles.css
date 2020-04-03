@@ -2749,5 +2749,94 @@ footer .second-floor p {
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 1350px) {
+  .contacts {
+    margin-bottom: 100px;
+  }
+  .contacts .container {
+    margin-top: -40px;
+  }
+  .contacts .container div {
+    padding-bottom: 0px;
+  }
+  .contacts .container div div h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .contacts .container .contacts__contacts {
+    padding-left: 30px;
+  }
+  .contacts .container .contacts__contacts p {
+    padding-right: 20%;
+  }
+  .contacts .container .contacts__contacts p br {
+    display: none;
+  }
+  .contacts .container .contacts__contacts .contacts__oneline div {
+    display: block;
+  }
+  .contacts .container .contacts__contacts .contacts__oneline div:first-of-type {
+    margin-bottom: 25px;
+  }
+  .contacts .container .contacts__contacts .panel__socials a {
+    margin-right: 15px;
+  }
+  .contacts .container .contacts__bankDetails {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+  .contacts .container .contacts__bankDetails .border-holder {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .contacts .container .contacts__bankDetails .border-holder table {
+    width: 100%;
+    padding-right: 20%;
+  }
+  .contacts .container .contacts__bankDetails .border-holder table tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts .container .contacts__bankDetails .border-holder table tr td:nth-last-of-type(2) {
+    padding: 0;
+  }
+  .contacts .container .contacts__bankDetails .border-holder table tr td.td-bank-name {
+    border-top: 1px dotted black;
+  }
+  .contacts .container .contacts__bankDetails .border-holder table tr td.td-bank-name + td + td {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contacts .container .contacts__contacts p {
+    padding-right: 10%;
+  }
+
+  .contacts .container .contacts__bankDetails .border-holder table {
+    padding-right: 10%;
+  }
+}
+@media screen and (max-width: 765px) {
+  .contacts .container > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts .container > div .contacts__contacts {
+    width: 100%;
+  }
+  .contacts .container > div .contacts__contacts p {
+    padding-right: 40%;
+  }
+  .contacts .container > div .contacts__bankDetails {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 70px;
+  }
+  .contacts .container > div .contacts__bankDetails .border-holder table {
+    padding-right: 0;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
