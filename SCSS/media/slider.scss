@@ -59,3 +59,35 @@
     }
   }
 }
+
+//===================================
+
+@media screen and (max-width: 1350px) {
+  .slider {
+    .slider-body--service-opinion {
+
+      .slider-button {
+        top: calc(100% + 60px);
+
+        &.slider-button--left {
+          left: 0;
+        }
+
+        &.slider-button--right {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .slider {
+    .slider-body--service-opinion {
+      .slider-service-opinion__container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}

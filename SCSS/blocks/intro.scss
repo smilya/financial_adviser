@@ -1,6 +1,10 @@
 .intro {
   background-color: $color-background;
 
+  .intro__header-outer {
+    background: lightgray;
+  }
+
   .intro__header {
     position: relative;
     display: flex;
@@ -31,9 +35,7 @@
     }
 
     .intro__image {
-      width: 578px;
-      height: 671px;
-      // position: relative;
+      height: 675px;
       position: absolute;
       bottom: 0;
       right: 150px;
@@ -81,6 +83,7 @@
     .signature {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
       margin-bottom: 35px;
 
       h4 {
@@ -90,6 +93,10 @@
       p {
         font-size: 16px;
         color: #919191;
+      }
+
+      img {
+        width: 250px;
       }
     }
   }

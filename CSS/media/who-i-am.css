@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 26 |         min-width: $width-trio;
+ * 35 |         min-width: $width-trio;
  *    |                    ^^^^^^^^^^^
  *    '
- *   scss\media\who-i-am.scss 26:20  root stylesheet */
+ *   scss\media\who-i-am.scss 35:20  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 26 \2502          min-width: $width-trio;\d\a    \2502                     ^^^^^^^^^^^\a    \2575 \a   scss\\media\\who-i-am.scss 26:20  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 35 \2502          min-width: $width-trio;\d\a    \2502                     ^^^^^^^^^^^\a    \2575 \a   scss\\media\\who-i-am.scss 35:20  root stylesheet";
 }

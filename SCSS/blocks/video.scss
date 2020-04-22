@@ -27,13 +27,14 @@
   }
 
   &>.container>a {
-    color: #e94a36;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    text-align: center;
-    display: block;
-    width: 230px;
     margin: 0 auto;
+    display: block;
+    width: 170px;    
+  }
+
+  & .go-banner {
+    padding: 3px 10px;
+    background-color: #262626;
+    color: white;
   }
 }

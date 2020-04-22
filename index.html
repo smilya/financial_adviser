@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <title>Главная</title>
 </head>
 <body>
@@ -65,8 +66,8 @@
           </a>
           <a href="#">
             <li class="dzen-holder">Яндкс
-              <img src="images/menu/ya-dzen-light.png" alt="yandex dzen light">
-              <img src="images/menu/ya-dzen-dark.png" alt="yandex dzen dark">
+              <img src="images/menu/ya-dzen-light.svg" alt="yandex dzen light">
+              <img src="images/menu/ya-dzen-dark.svg" alt="yandex dzen dark">
             </li>
           </a>
           <a href="./pages/contacts.html">
@@ -79,26 +80,29 @@
 
 <div class="burgerOpposite">
     <section class="intro">
-      <div class="container">
-        <div class="intro__header">        
-            <div>
-              <h1>Капустянский Иван</h1>
-              <h3>Персональный финансовый <br>консультант</h3>
-              <h6>Начните грамотно управлять личными<br>финансами и получать максимальный доход<br>от инвестиций.</h6>
+<div class="intro__header-outer">
+        <div class="container">
+          <div class="intro__header">        
+              <div>
+                <h1>Капустянский Иван</h1>
+                <h3>Персональный финансовый <br>консультант</h3>
+                <h6>Начните грамотно управлять личными<br>финансами и получать максимальный доход<br>от инвестиций.</h6>
+      
+                <a href="#consultation" class="link-banner">
+                 <span>записаться на консультацию</span>
+                 <img src="./images/banners/arrow-next-white.png" alt="arrow-next">
+                </a>
+              </div>
     
-              <a href="#consultation" class="link-banner">
-               <span>записаться на консультацию</span>
-               <img src="./images/banners/arrow-next-white.png" alt="arrow-next">
-              </a>
-            </div>
-  
-            <div>
-              <img class="intro__image" src="./images/intro/intro-image.png" alt="image-portray">
-            </div>
-  
-         <img class="logo" src="./images/logo/logo-solo.svg" alt="logo">
+              <div>
+                <img class="intro__image" src="./images/intro/intro-image.png" alt="image-portray">
+              </div>
+    
+           <img class="logo" src="./images/logo/logo-solo.svg" alt="logo">
+          </div>
         </div>
-  
+</div>
+      <div class="container">
         <article>
           <div>
             <p><span>Здравствуйте! Меня зовут Иван Капустянский.</span></p> 
@@ -120,7 +124,7 @@
               <h4>Иван Капустянский</h4>
               <p>Ваш персональный финансовый консультант</p>            
             </div>
-              <img src="./images/intro/signature.jpg" alt="signature">
+              <img src="./images/intro/signature.png" alt="signature">
           </div>
         </article>
       </div>
@@ -224,15 +228,16 @@
   
           <div class="item">
             <img  alt="item 1 image">
-                          
+            <div class="item-logo">
+              <img alt="media logo">
+            </div>                          
             <div>
               <h5></h5>
               <p></p>
-            </div> 
-                         
+            </div>                          
             <div class="item__footer">            
               <a target="_blank">
-                <div class="go-banner">
+                <div class="go-banner go-banner--simple">
                   <span>читать</span>
                   <img class="hover-off" src="./images/banners/arrow-next-red.png" alt="arrow red">
                   <img class="hover-on" src="./images/banners/arrow-next-white.png" alt="arrow white">
@@ -243,14 +248,16 @@
   
           <div class="item">
             <img alt="item 2 image">
+            <div class="item-logo">
+              <img alt="media logo">
+            </div>
             <div>
               <h5></h5>
               <p></p>
-            </div>
-  
+            </div>  
             <div class="item__footer">  
               <a target="_blank">
-                <div class="go-banner">
+                <div class="go-banner go-banner--simple">
                   <span>читать</span>
                   <img class="hover-off" src="./images/banners/arrow-next-red.png" alt="arrow red">
                   <img class="hover-on" src="./images/banners/arrow-next-white.png" alt="arrow white">
@@ -261,14 +268,16 @@
   
           <div class="item">
             <img alt="item 3 image">
+            <div class="item-logo">
+              <img alt="media logo">
+            </div>
             <div>
               <h5></h5>
               <p></p>
-            </div> 
-                         
+            </div>                          
             <div class="item__footer">
               <a target="_blank">
-                <div class="go-banner">
+                <div class="go-banner go-banner--simple">
                   <span>читать</span>
                   <img class="hover-off" src="./images/banners/arrow-next-red.png" alt="arrow red">
                   <img class="hover-on" src="./images/banners/arrow-next-white.png" alt="arrow white">
@@ -293,7 +302,14 @@
           <iframe src="https://www.youtube.com/embed/Uki36oI38bM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         
-        <a href="./pages/video.html">Посмотреть еще видео</a>
+        <!-- <a href="./pages/video.html">Посмотреть еще видео</a>-->
+        <a href="./pages/video.html">
+          <div class="go-banner go-banner--simple">
+            <span>еще видео</span>
+            <img class="hover-off" src="./images/banners/arrow-next-red.png" alt="arrow red">
+            <img class="hover-on" src="./images/banners/arrow-next-white.png" alt="arrow white">
+          </div>
+        </a>
       </div>
     </section>
   
@@ -329,7 +345,7 @@
         <a name="about-me"></a>  
         <h3>Обо мне</h3>
         <div class="underline"></div>
-        <p>Использую различные модели визуализации: графики, диаграммы, таблицы, а также свои собственные разработки,<br>— чтобы вы понимали, каждый шаг на пути к своей финансовой цели.</p>
+        <p>Использую различные модели визуализации: графики, диаграммы, таблицы, а также свои собственные разработки, — чтобы вы понимали, каждый шаг на пути к своей финансовой цели.</p>
   
         <div class="row">
           <div class="item">
@@ -428,7 +444,7 @@
           </a>
           <a href="#">
             <li class="dzen-holder">Яндкс
-              <img src="images/menu/ya-dzen-dark.png" alt="yandex dzen">
+              <img src="images/menu/ya-dzen-dark.svg" alt="yandex dzen">
             </li>
           </a>
           <a href="./pages/contacts.html">

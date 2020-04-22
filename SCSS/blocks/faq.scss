@@ -63,15 +63,17 @@
       .faq-item {
         background-color: #fff;
         margin-bottom: 7px;
+        border-radius: 10px;
 
         .faq-item__header {
           border: $border-common;
-          font-size: 22px;
+          border-radius: 10px;
+          font-size: 18px;
           font-weight: 700;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 25px 40px 22px;
+          padding: 20px 40px 18px;
 
           .faq-item__arrows {
             position: relative;
@@ -96,6 +98,7 @@
 
           p {
             font-size: 16px;
+            line-height: 26px;
             margin-bottom: 35px;            
           }
 

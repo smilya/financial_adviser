@@ -55,8 +55,8 @@ let menuHeader = `
       </a>
       <a href="#">
         <li class="dzen-holder">Яндкс
-          <img src="../images/menu/ya-dzen-light.png" alt="yandex dzen">
-          <img src="../images/menu/ya-dzen-dark.png" alt="yandex dzen dark">
+          <img src="../images/menu/ya-dzen-light.svg" alt="yandex dzen">
+          <img src="../images/menu/ya-dzen-dark.svg" alt="yandex dzen dark">
         </li>
       </a>
       <a href="../pages/contacts.html">
@@ -111,7 +111,7 @@ let menuFooter = `
         <li class="menu__faq">faq</li>
       </a>
       <a href="#">
-        <li class="dzen-holder">Яндкс<img src="../images/menu/ya-dzen-dark.png" alt="yandex dzen"></li>
+        <li class="dzen-holder">Яндкс<img src="../images/menu/ya-dzen-dark.svg" alt="yandex dzen"></li>
       </a>
       <a href="../pages/contacts.html">
         <li class="menu__contacts">контакты</li>

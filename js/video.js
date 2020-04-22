@@ -1,5 +1,5 @@
 "use strict";
-
+// Код плохой - переписать!!!! Сделать как у faq
 let items = document.querySelectorAll('.item');
 let pagesNumber = Math.ceil(videos.length / 9);
 let pageBar = document.querySelector('.pagination');
@@ -46,7 +46,7 @@ function fillFilteredPage(tag) {
   let filteredArr = filterVideos(tag);
   fillItems(0, items, filteredArr);
   removePagination();
-  numOfPages = Math.ceil(filteredArr.length / 9);
+  let numOfPages = Math.ceil(filteredArr.length / 9);
   if (numOfPages) {
     makePagination(numOfPages, pageBar, fillItems, filteredArr, items, anchor);
     document.querySelector(".pagination>div:first-of-type").className = "active";

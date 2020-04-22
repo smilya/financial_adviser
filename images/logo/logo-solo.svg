@@ -6,7 +6,7 @@
 
  <g>
   <title>background</title>
-  <rect x="-1" y="-1" width="102" height="101" id="canvas_background" fill="none"/>
+  <rect x="-1" y="-1" width="102" height="101" id="canvas_background" fill="white"/>
  </g>
  <g>
   <title>Layer 1</title>

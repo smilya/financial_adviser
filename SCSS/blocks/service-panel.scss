@@ -25,10 +25,13 @@
 
       p {
         font-size: 16px;
+        line-height: 20px;
+        flex-grow: 1;
+        margin-top: 15px;
       }
 
       .go-banner {
-        padding: 0 10px;
+        padding: 0 10px 0 0;
       }
     }
   }

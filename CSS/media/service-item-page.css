@@ -1,0 +1,36 @@
+@media screen and (max-width: 1350px) {
+  .service-menu {
+    display: none;
+  }
+
+  .service-main .service-intro > p {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .service-main iframe {
+    width: 100%;
+    height: 60vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .service-main ul.consult-stages li {
+    border-radius: 0;
+  }
+  .service-main ul.consult-stages li .consult-stages-main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .service-main ul.consult-stages li .consult-stages-main .consult-stages-heading {
+    margin-left: 20px;
+  }
+  .service-main ul.consult-stages li .consult-stages-main .consult-stages__arrows {
+    align-self: flex-start;
+  }
+
+  .service-main ul.consult-costs-n-terms li p {
+    padding-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=service-item-page.css.map */

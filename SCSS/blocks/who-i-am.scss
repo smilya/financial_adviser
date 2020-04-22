@@ -7,17 +7,20 @@
     display: flex;
     justify-content: space-between;
 
-    .who-i-am__foo {
-      min-width: 640px;
-      height: 420px;
-      background-color: #e2e2e2;
+    &>img {
+      width: 40%;
+      align-self: flex-start;
     }
 
     .who-i-am__slogan {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       margin-left: 90px;
+
+      img {
+        align-self: flex-start;
+      }
     }
   }
 

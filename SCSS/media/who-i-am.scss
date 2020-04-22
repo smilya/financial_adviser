@@ -11,6 +11,15 @@
 
         h4 {
           margin-bottom: 20px;
+
+          br {
+            display: none;
+          }
+        }
+
+        img {
+          width: 180px;
+          margin-top: 20px;
         }
       }
 
@@ -47,7 +56,12 @@
 }
 
 @media screen and (max-width: 950px) {
-  .who-i-am {    
+  .who-i-am { 
+    .who-i-am__intro > img {
+      width: 50%;
+      align-self: center;
+    }
+    
     .who-i-am__medals {
       .medals__item {
         min-width: $width-duet;
@@ -68,17 +82,14 @@
   }
 }  
 
-
-
 @media screen and (max-width: 765px) {
   .who-i-am {
     .who-i-am__intro {
       flex-direction: column;
 
-      .who-i-am__foo {
-        min-width: 100%;
-        height: 65vw;
-        margin-bottom: 40px;
+      &>img {
+        width: 100%; 
+        margin-bottom: 30px;      
       }
     }
   }
