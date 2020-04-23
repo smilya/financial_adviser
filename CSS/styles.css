@@ -406,7 +406,7 @@ menu li.dzen-holder:hover img:last-of-type, menu li.dzen-holder:active img:last-
   background-color: #fafafa;
 }
 .intro .intro__header-outer {
-  background-image: url(../../images/intro/intro_background.jpg);
+  background-image: url(../images/intro/intro_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
