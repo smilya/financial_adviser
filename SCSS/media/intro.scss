@@ -1,5 +1,9 @@
 @media screen and (max-width: 1350px) {
   .intro {
+    .intro__header-outer {
+      background-position: 0 0;
+    }
+
     .intro__header {
       flex-direction: column;
 

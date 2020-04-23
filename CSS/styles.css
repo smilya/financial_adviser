@@ -406,7 +406,9 @@ menu li.dzen-holder:hover img:last-of-type, menu li.dzen-holder:active img:last-
   background-color: #fafafa;
 }
 .intro .intro__header-outer {
-  background: lightgray;
+  background-image: url(../../images/intro/intro_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .intro .intro__header {
   position: relative;
@@ -1965,6 +1967,9 @@ footer .second-floor p {
   }
 }
 @media screen and (max-width: 1350px) {
+  .intro .intro__header-outer {
+    background-position: 0 0;
+  }
   .intro .intro__header {
     flex-direction: column;
   }
