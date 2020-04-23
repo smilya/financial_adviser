@@ -19,7 +19,7 @@ let header = `
     <div class="panel__socials">
       <a href="https://www.facebook.com/profile.php?id=100007684937493" target="_blank"><img src="../images/header/facebook-header.jpg" alt="facebook"></a>
       <a href="https://www.instagram.com/ivankapustyanskiy/" target="_blank"><img src="../images/header/instagram-header.jpg" alt="instagram"></a>
-      <a href="skype:i.kapustyanskiy"><img src="../images/header/skype-header.jpg" alt="skype"></a>
+      <a href="https://vk.com/id2369372" target="_blank"><img src="../images/header/vk-header.jpg" alt="vk"></a>
       <a href="https://www.youtube.com/channel/UCDOzzawwihThV5oLp632Wbg/featured?view_as=subscriber" target="_blank"><img src="../images/header/youtube-header.jpg" alt="youtube"></a>
     </div>
 
@@ -131,13 +131,13 @@ let footer = `
       <div class="services">
           <h5>Услуги</h5>
         <div>          
-          <p>Индивидуальные консультации</p>
-          <p>Личный финансовый план</p>
-          <p>Индивидуальное сопровождение<br>клиента</p>
+          <a href="../pages/service-consultation.html">Индивидуальные консультации</a>
+          <a href="../pages/service-plan.html">Личный финансовый план</a>
+          <a href="../pages/service-escort.html">Индивидуальное сопровождение <br>клиента</a>
         </div>
         <div>
-          <p>Второе мнение</p>
-          <p>Разработка индивидуального<br>решения</p>
+          <a href="../pages/service-opinion.html">Второе мнение</a>
+          <a href="../pages/service-solution.html">Разработка индивидуального <br>решения</a>
         </div>
       </div>
 

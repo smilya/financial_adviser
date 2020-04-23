@@ -971,10 +971,14 @@ footer .first-floor .services > div {
   font-size: 0;
   vertical-align: top;
 }
-footer .first-floor .services > div p {
+footer .first-floor .services > div a {
+  display: block;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 10px;
+}
+footer .first-floor .services > div a:hover {
+  color: #f0361f;
 }
 footer .first-floor .services > div:first-of-type {
   margin-right: 60px;
