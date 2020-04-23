@@ -1,26 +1,28 @@
 @media screen and (max-width: 1370px) {
-  .consultation .container div div h2 {
+  .consultation .container > div > img {
+    width: 50%;
+  }
+  .consultation .container > div div h2 {
     font-size: 34px;
     line-height: 41px;
     max-width: 320px;
   }
-  .consultation .container div div h2 br {
+  .consultation .container > div div h2 br {
     display: none;
   }
-  .consultation .container div div h6 {
+  .consultation .container > div div h6 {
     position: static;
     text-align: left;
     max-width: 320px;
     font-size: 18px;
     line-height: 160%;
   }
-  .consultation .container div div h6 br {
-    display: none;
+  .consultation .container > div div .input {
+    width: 410px;
   }
-}
-@media screen and (max-width: 1300px) {
-  .consultation .container > div > img {
-    width: 50%;
+  .consultation .container > div div .link-banner {
+    padding-left: 31px;
+    padding-right: 32px;
   }
 }
 @media screen and (max-width: 1252px) {
@@ -28,8 +30,11 @@
     padding-left: 5%;
   }
 
-  .consultation .container div div input {
+  .consultation .container div div .input {
     max-width: 342px;
+  }
+  .consultation .container div div textarea {
+    min-height: 140px;
   }
   .consultation .container div div .link-banner {
     justify-content: center;
@@ -53,14 +58,6 @@
 @media screen and (max-width: 1100px) {
   .consultation .container div div {
     padding-top: 20px;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .consultation .container > div > img {
-    width: 55%;
-  }
-  .consultation .container > div div {
-    padding-left: 2%;
   }
 }
 @media screen and (max-width: 950px) {
@@ -99,7 +96,7 @@
     margin: 0;
     width: 100%;
   }
-  .consultation .container > div > div input {
+  .consultation .container > div > div .input {
     width: 100% !important;
   }
   .consultation .container > div > div .link-banner {

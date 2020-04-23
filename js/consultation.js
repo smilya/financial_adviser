@@ -3,7 +3,7 @@
 let launchConsultation = document.getElementById('launchConsultation');
 let nameField = document.querySelector('#consultationForm>input[name="name"]');
 let emailField = document.querySelector('#consultationForm>input[name="email"]');
-let textField = document.querySelector('#consultationForm>input[name="text"]');
+let textField = document.querySelector('#consultationForm>textarea[name="text"]');
 
 // Снимаем класс ошибки с полей, когда в них вводятся данные
   nameField.oninput = function () {
@@ -16,7 +16,7 @@ let textField = document.querySelector('#consultationForm>input[name="text"]');
     textField.classList.remove("error");
   }
 
-launchConsultation.onclick = function() {  
+launchConsultation.onclick = function() { 
 
   // Блок проверок
   {

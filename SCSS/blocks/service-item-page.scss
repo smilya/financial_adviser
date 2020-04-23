@@ -12,7 +12,8 @@
   }
 
   h5 {
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 700;
   }
 
   ul {
@@ -23,6 +24,26 @@
       margin-bottom: 13px;
     }
   }
+
+  .specialForPlan {
+    display: flex;
+
+    ul.specialForPlan__ul {
+      margin-left: 0;
+      flex-basis: 50%;
+      
+      li {
+        color: black;
+        font-size: 18px;
+        list-style: none;
+        background: url('../../images/service-pages/li-mark.svg') no-repeat;
+        background-size: 30px;
+        padding-left: 45px;
+      }    
+    }
+  }
+
+ 
 
   ul.consult-stages {
     margin-left: 0;
@@ -111,5 +132,52 @@
         padding: 20px 120px 20px 30px;
       }
     }
+  }
+
+  .costs-n-terms-complex {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+    .consult-costs-n-terms--complex {
+      flex-basis: calc(50% - 1px);
+
+      h5 {
+        color: black;
+        padding-left: 33px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        line-height: 24px;
+        font-size: 16px;
+        color: black;
+      }
+
+      &:last-of-type {
+        padding-left: 5%;
+      }
+    }
+
+    .costs-n-terms-divider {
+      flex-basis: 2px;
+      align-self: stretch;
+      border-left: $border-common;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    &>p {
+      flex-basis: 100%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      color: #8f8f8f;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding-right: 5px;
+    }
+
   }
 }

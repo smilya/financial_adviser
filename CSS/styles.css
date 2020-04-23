@@ -918,31 +918,58 @@ menu li.dzen-holder:hover img:last-of-type, menu li.dzen-holder:active img:last-
   background-color: #fff;
   display: flex;
 }
+.consultation .container > div > img {
+  align-self: stretch;
+  object-fit: cover;
+}
 .consultation .container > div > div {
   padding-left: 85px;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 .consultation .container > div > div h2 {
   margin-bottom: 20px;
 }
 .consultation .container > div > div h6 {
-  text-align: center;
-  position: relative;
-  right: 60px;
+  max-width: 475px;
   margin-bottom: 30px;
 }
-.consultation .container > div > div input {
-  width: 440px;
+.consultation .container > div > div #consultationForm {
+  padding-bottom: 25px;
+}
+.consultation .container > div > div .input {
+  width: 475px;
   margin-bottom: 10px;
 }
-.consultation .container > div > div input.error {
+.consultation .container > div > div .input.error {
   color: red;
 }
-.consultation .container > div > div input.error::-webkit-input-placeholder {
+.consultation .container > div > div .input.error::-webkit-input-placeholder {
   color: red;
 }
-.consultation .container > div > div input.error::-moz-placeholder {
+.consultation .container > div > div .input.error::-moz-placeholder {
   color: red;
+}
+.consultation .container > div > div textarea {
+  display: block;
+  resize: vertical;
+  min-height: 175px;
+  outline: none;
+  padding: 20px 35px 18px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  border: 1px solid #e8e8e8;
+}
+.consultation .container > div > div textarea::-webkit-input-placeholder {
+  color: #979797;
+}
+.consultation .container > div > div textarea::-moz-placeholder {
+  color: #979797;
+}
+.consultation .container > div > div .link-banner {
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
 footer {
@@ -1699,7 +1726,8 @@ footer .second-floor p {
   margin-bottom: 30px;
 }
 .service-main h5 {
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .service-main ul {
   margin-left: 30px;
@@ -1713,6 +1741,21 @@ footer .second-floor p {
 .service-main ul li span {
   color: black;
   font-size: 18px;
+}
+.service-main .specialForPlan {
+  display: flex;
+}
+.service-main .specialForPlan ul.specialForPlan__ul {
+  margin-left: 0;
+  flex-basis: 50%;
+}
+.service-main .specialForPlan ul.specialForPlan__ul li {
+  color: black;
+  font-size: 18px;
+  list-style: none;
+  background: url("../../images/service-pages/li-mark.svg") no-repeat;
+  background-size: 30px;
+  padding-left: 45px;
 }
 .service-main ul.consult-stages {
   margin-left: 0;
@@ -1793,6 +1836,45 @@ footer .second-floor p {
   font-size: 14px;
   padding: 20px 120px 20px 30px;
 }
+.service-main .costs-n-terms-complex {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-main .costs-n-terms-complex .consult-costs-n-terms--complex {
+  flex-basis: calc(50% - 1px);
+}
+.service-main .costs-n-terms-complex .consult-costs-n-terms--complex h5 {
+  color: black;
+  padding-left: 33px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.service-main .costs-n-terms-complex .consult-costs-n-terms--complex p {
+  line-height: 24px;
+  font-size: 16px;
+  color: black;
+}
+.service-main .costs-n-terms-complex .consult-costs-n-terms--complex:last-of-type {
+  padding-left: 5%;
+}
+.service-main .costs-n-terms-complex .costs-n-terms-divider {
+  flex-basis: 2px;
+  align-self: stretch;
+  border-left: 1px solid #e8e8e8;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.service-main .costs-n-terms-complex > p {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8f8f8f;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-right: 5px;
+}
 
 @media screen and (max-width: 1350px) {
   .container {
@@ -1804,6 +1886,12 @@ footer .second-floor p {
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 28px !important;
+    line-height: 36px !important;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -2435,28 +2523,30 @@ footer .second-floor p {
   }
 }
 @media screen and (max-width: 1370px) {
-  .consultation .container div div h2 {
+  .consultation .container > div > img {
+    width: 50%;
+  }
+  .consultation .container > div div h2 {
     font-size: 34px;
     line-height: 41px;
     max-width: 320px;
   }
-  .consultation .container div div h2 br {
+  .consultation .container > div div h2 br {
     display: none;
   }
-  .consultation .container div div h6 {
+  .consultation .container > div div h6 {
     position: static;
     text-align: left;
     max-width: 320px;
     font-size: 18px;
     line-height: 160%;
   }
-  .consultation .container div div h6 br {
-    display: none;
+  .consultation .container > div div .input {
+    width: 410px;
   }
-}
-@media screen and (max-width: 1300px) {
-  .consultation .container > div > img {
-    width: 50%;
+  .consultation .container > div div .link-banner {
+    padding-left: 31px;
+    padding-right: 32px;
   }
 }
 @media screen and (max-width: 1252px) {
@@ -2464,8 +2554,11 @@ footer .second-floor p {
     padding-left: 5%;
   }
 
-  .consultation .container div div input {
+  .consultation .container div div .input {
     max-width: 342px;
+  }
+  .consultation .container div div textarea {
+    min-height: 140px;
   }
   .consultation .container div div .link-banner {
     justify-content: center;
@@ -2489,14 +2582,6 @@ footer .second-floor p {
 @media screen and (max-width: 1100px) {
   .consultation .container div div {
     padding-top: 20px;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .consultation .container > div > img {
-    width: 55%;
-  }
-  .consultation .container > div div {
-    padding-left: 2%;
   }
 }
 @media screen and (max-width: 950px) {
@@ -2535,7 +2620,7 @@ footer .second-floor p {
     margin: 0;
     width: 100%;
   }
-  .consultation .container > div > div input {
+  .consultation .container > div > div .input {
     width: 100% !important;
   }
   .consultation .container > div > div .link-banner {
@@ -3008,11 +3093,11 @@ footer .second-floor p {
 @media screen and (max-width: 1350px) {
   .faq .container {
     margin-top: -20px;
-  }
-  .faq .container h6 {
-    font-size: 18px;
-    line-height: 160%;
-    margin-bottom: 40px;
+    /*       h6 {
+            font-size: 18px;
+            line-height: 160%;
+            margin-bottom: 40px;
+          } */
   }
   .faq .container .link-banner {
     padding-left: 107px;
@@ -3056,7 +3141,7 @@ footer .second-floor p {
   }
 }
 @media screen and (max-width: 550px) {
-  .faq .container h6 br {
+  .page-title p br {
     display: none;
   }
 }
@@ -3189,6 +3274,29 @@ footer .second-floor p {
     margin-bottom: 100px;
   }
 }
+@media screen and (max-width: 1350px) {
+  .service-main .service-intro .specialForPlan {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .service-main .costs-n-terms-complex {
+    flex-direction: column;
+  }
+  .service-main .costs-n-terms-complex .costs-n-terms-divider {
+    display: none;
+  }
+  .service-main .costs-n-terms-complex .consult-costs-n-terms--complex {
+    width: 80%;
+  }
+  .service-main .costs-n-terms-complex .consult-costs-n-terms--complex:last-of-type {
+    padding-left: 0;
+  }
+  .service-main .costs-n-terms-complex > p {
+    text-align: left;
+    padding-left: 28px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .service-main iframe {
     width: 100%;
@@ -3209,9 +3317,28 @@ footer .second-floor p {
   .service-main ul.consult-stages li .consult-stages-main .consult-stages__arrows {
     align-self: flex-start;
   }
+  .service-main ul.consult-stages li .consult-stages-addition {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   .service-main ul.consult-costs-n-terms li p {
     padding-right: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .service-main ul.consult-stages li .consult-stages-addition {
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .service-main .costs-n-terms-complex .consult-costs-n-terms--complex {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .service-main ul.consult-stages.consult-costs-n-terms li .consult-stages-main {
+    padding-right: 0;
   }
 }
 

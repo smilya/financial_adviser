@@ -11,3 +11,10 @@
     padding-right: 15px;    
   }
 }
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+}

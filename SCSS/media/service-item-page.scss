@@ -10,6 +10,39 @@
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .service-main {
+    .service-intro {
+      .specialForPlan {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .service-main .costs-n-terms-complex {
+    flex-direction: column;
+
+    .costs-n-terms-divider {
+      display: none;
+    }
+
+    .consult-costs-n-terms--complex {
+      width: 80%;
+
+      &:last-of-type {
+        padding-left: 0;
+      }
+    }
+
+    &>p {
+      text-align: left;
+      padding-left: 28px;
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .service-main {
     iframe {
@@ -35,11 +68,32 @@
         align-self: flex-start;
       }
     }
+
+    .consult-stages-addition {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 
   .service-main ul.consult-costs-n-terms li p {
     padding-right: 20px;
   }
+}
 
-  
+@media screen and (max-width: 700px) {
+  .service-main ul.consult-stages li .consult-stages-addition {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .service-main .costs-n-terms-complex .consult-costs-n-terms--complex {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .service-main ul.consult-stages.consult-costs-n-terms li .consult-stages-main {
+    padding-right: 0;
+  }
 }

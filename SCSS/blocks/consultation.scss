@@ -5,24 +5,31 @@
   .container>div {
     background-color: #fff;
     display: flex;
+
+    &>img {
+      align-self: stretch;
+      object-fit: cover;
+    }
     
     &>div {
       padding-left: 85px;
-      padding-top: 80px;
+      padding-top: 60px;
 
       h2 {
         margin-bottom: 20px;
       }
 
       h6 {
-        text-align: center;
-        position: relative;
-        right: 60px;
+        max-width: 475px;
         margin-bottom: 30px;
       }
 
-      input {
-        width: 440px;
+      #consultationForm {
+        padding-bottom: 25px;
+      }
+
+      .input {
+        width: 475px;
         margin-bottom: 10px;
 
         &.error {color: red;}
@@ -30,7 +37,26 @@
         &.error::-moz-placeholder { color: red; };
       }
 
+      textarea {
+        display: block;
+        resize: vertical;
+        min-height: 175px;
+        outline: none;
+        padding: 20px 35px 18px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        border: $border-common;
 
+        &::-webkit-input-placeholder { color: #979797; };
+        &::-moz-placeholder { color: #979797; };
+      }
+
+      .link-banner {
+        padding-left: 64px;
+        padding-right: 64px;
+      }
 
     }
   }

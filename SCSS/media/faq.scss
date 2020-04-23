@@ -3,11 +3,11 @@
     .container {
       margin-top: -20px;
 
-      h6 {
+/*       h6 {
         font-size: 18px;
         line-height: 160%;
         margin-bottom: 40px;
-      }
+      } */
 
       .link-banner {
         padding-left: 107px;
@@ -68,7 +68,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  .faq .container h6 br {
+  .page-title p br {
     display: none;
   }
 }
