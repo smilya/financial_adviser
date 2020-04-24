@@ -110,12 +110,12 @@
   let faqItemHTML = `
       <div class="faq-item__header">
         <p class="faq-title"></p>
-        <div class="faq-item__arrows">
-          <img class="faq-arrow-whenClosed" src="../images/faq/arrow-down.png" alt="arrow-down">
-          <img class="faq-arrow-whenOpen hidden" src="../images/faq/arrow-up.png" alt="arrow-up">                
+        <div class="faq-item__arrows dropdown__arrows">
+          <img class="faq-arrow-whenClosed dropdown__arrowClosed" src="../images/faq/arrow-down.png" alt="arrow-down">
+          <img class="faq-arrow-whenOpen dropdown__arrowOpen hidden" src="../images/faq/arrow-up.png" alt="arrow-up">                
         </div>
       </div>
-      <div class="faq-item__body hidden">
+      <div class="faq-item__body dropdown__body hidden">
         <p class="faq-answer"></p> 
         <div class="faq-video-container">
           <iframe width="230" height="156" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -125,64 +125,30 @@
   `;
 
   let faqPanel = document.querySelector(".faq-panel");
-  let tags = document.querySelectorAll('.faq-tags li');
+  let currentQuestions = faqs;
 
-  function putQuestions(questionsArr) {
-    clearFaqPanel()    
-    for (let questionObj of questionsArr) {
+  function faq__putQuestions(questionsArr, page=1) {
+    clearFaqPanel();
+    currentQuestions = questionsArr;
+    let itemsOnPage = 7;
+let totalPages = Math.ceil(questionsArr.length / itemsOnPage);
+    for (let i = 0; i < itemsOnPage; i++) {
+      if ((page - 1) * 7 + i >= questionsArr.length) break;
       let newFaqItem = document.createElement('div');
       newFaqItem.classList.add('faq-item');
       newFaqItem.innerHTML = faqItemHTML;
       faqPanel.append(newFaqItem);
 
-      newFaqItem.querySelector('.faq-title').innerText = questionObj.title;
-      newFaqItem.querySelector('.faq-answer').innerText = questionObj.answer;
-      newFaqItem.querySelector('.faq-video-text').innerText = questionObj.videoText;
-      newFaqItem.querySelector('iframe').src = questionObj.videoLink;
+      newFaqItem.querySelector('.faq-title').innerText = questionsArr[(page - 1) * 7 + i].title;
+      newFaqItem.querySelector('.faq-answer').innerText = questionsArr[(page - 1) * 7 + i].answer;
+      newFaqItem.querySelector('.faq-video-text').innerText = questionsArr[(page - 1) * 7 + i].videoText;
+      newFaqItem.querySelector('iframe').src = questionsArr[(page - 1) * 7 + i].videoLink;
     }
-    setOpenClose();
+    setDropdowns('faq-item');
   }
 
   function clearFaqPanel() {
     let items = document.querySelectorAll('.faq-item');
     for (let i of items) i.remove();
-  }
-
-  function setOpenClose() {
-  let arrowsBlocks = document.querySelectorAll(".faq-item__arrows");
-  let questionBodies = document.querySelectorAll(".faq-item__body");
+  }  
   
-  for (let i = 0; i < arrowsBlocks.length; i++) {
-    arrowsBlocks[i].onclick = function() {
-      let arrows = arrowsBlocks[i].querySelectorAll('img');
-      arrows[0].classList.toggle('hidden');
-      arrows[1].classList.toggle('hidden');
-      questionBodies[i].classList.toggle('hidden');
-      }
-    }
-  }
-  
- 
-  for (let tag of tags) {
-    tag.onclick = function() {
-      if (tag.classList.contains('active')) {
-        tag.classList.remove('active');
-        putQuestions(faqs);
-      }
-      else {
-        tag.classList.add('active');
-        let tagText = tag.innerText.slice(1).toLowerCase();
-        let taggedQuestions = [];
-        for (let question of faqs) {
-          if (question.tags.includes(tagText)) {
-            taggedQuestions.push(question);
-          }
-        }
-        putQuestions(taggedQuestions); 
-      }
-
-     
-    }
-  }
-
-  putQuestions(faqs);

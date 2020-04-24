@@ -1,6 +1,27 @@
 "use strict";
+
+let videoPanel = document.querySelector(".video-panel");
+let currentVideos = videos;
+
+
+//функция по заполнению видео-панели, аргументы (массивДанных, page=1)
+function video__layOutFunction() {
+  console.log('layOut')
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // Код плохой - переписать!!!! Сделать как у faq
-let items = document.querySelectorAll('.item');
+ let items = document.querySelectorAll('.item');
 let pagesNumber = Math.ceil(videos.length / 9);
 let pageBar = document.querySelector('.pagination');
 let anchor = "#video-anchor"
@@ -74,9 +95,11 @@ function onTagClick(tagNum, tag) {
 
 let tags = document.querySelectorAll('.tags>li');
 
-tags[0].onclick = function(){ onTagClick(0, "Финансы") };
+/* tags[0].onclick = function(){ onTagClick(0, "Финансы") };
 tags[1].onclick = function(){ onTagClick(1, "Консультации") };
 tags[2].onclick = function(){ onTagClick(2, "Деньги") };
 tags[3].onclick = function(){ onTagClick(3, "Планирование") };
 tags[4].onclick = function(){ onTagClick(4, "Инвестиции") };
-tags[5].onclick = function(){ onTagClick(5, "Недвижимость") };
+tags[5].onclick = function(){ onTagClick(5, "Недвижимость") }; 
+ */
+

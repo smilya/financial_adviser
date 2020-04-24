@@ -1307,14 +1307,14 @@ footer .second-floor p {
   color: black;
 }
 
-.tags li {
-  display: inline;
+.tags .tag {
+  display: inline-block;
   font-size: 14px;
   color: #969696;
   margin-right: 30px;
   cursor: pointer;
 }
-.tags li:hover, .tags li.active {
+.tags .tag:hover, .tags .tag.active {
   color: #f0361f;
 }
 
@@ -1427,6 +1427,10 @@ footer .second-floor p {
   margin-right: 2.2%;
   line-height: 22px;
   padding: 40px;
+  /* 
+        .tag {
+          display: inline-block;
+        } */
 }
 .faq .faq-main .faq-panel {
   width: 70%;
@@ -1755,7 +1759,7 @@ footer .second-floor p {
   color: black;
   font-size: 18px;
   list-style: none;
-  background: url("../../images/service-pages/li-mark.svg") no-repeat;
+  background: url("../images/service-pages/li-mark.svg") no-repeat;
   background-size: 30px;
   padding-left: 45px;
 }

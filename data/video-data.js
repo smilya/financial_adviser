@@ -1,1 +1,178 @@
-let videos = [{"date":"26.01.2020","title":"Приключения Васи Куролесова","src":"https://www.youtube.com/embed/BtjomGMbx3w","tags":["Деньги"]},{"date":"26.01.2020","title":"Голубой вагон","src":"https://www.youtube.com/embed/XVDkdvEplrQ","tags":["Финансы"]},{"date":"24.01.2020","title":"WidowMaker","src":"https://www.youtube.com/embed/CprjKrgvAYk","tags":["собачки"]},{"date":"24.01.2020","title":"Песенка мамонтенка","src":"https://www.youtube.com/embed/LQsBJbMt17I","tags":["собачки"]},{"date":"23.01.2020","title":"Жил был Пес","src":"https://www.youtube.com/embed/tlNmCFSKEKU","tags":["собачки"]}];
+let videos = [
+  {
+    "date":"26.01.2020",
+    "title":"Приключения Васи Куролесова",
+    "src":"https://www.youtube.com/embed/BtjomGMbx3w",
+    "tags":["деньги"]
+  },
+  
+  {
+    "date":"26.01.2020",
+    "title":"Голубой вагон",
+    "src":"https://www.youtube.com/embed/XVDkdvEplrQ",
+    "tags":["финансы"]
+  },
+
+  {
+    "date":"24.01.2020",
+    "title":"WidowMaker",
+    "src":"https://www.youtube.com/embed/CprjKrgvAYk",
+    "tags":["консультации"]
+  },
+  
+  {
+    "date":"24.01.2020",
+    "title":"Песенка мамонтенка",
+    "src":"https://www.youtube.com/embed/LQsBJbMt17I",
+    "tags":["планирование"]
+  },
+  
+  {
+    "date":"23.01.2020",
+    "title":"Жил был Пес",
+    "src":"https://www.youtube.com/embed/tlNmCFSKEKU",
+    "tags":["инвестиции"]
+  },
+  
+  {
+    "date":"23.01.2020",
+    "title":"Жил был Пес",
+    "src":"https://www.youtube.com/embed/tlNmCFSKEKU",
+    "tags":["недвижимость"]
+  },
+  
+  {
+    "date":"26.01.2020",
+    "title":"Приключения Васи Куролесова",
+    "src":"https://www.youtube.com/embed/BtjomGMbx3w",
+    "tags":["деньги"]
+  },
+  
+  {
+    "date":"26.01.2020",
+    "title":"Голубой вагон",
+    "src":"https://www.youtube.com/embed/XVDkdvEplrQ",
+    "tags":["финансы"]
+  },
+
+  {
+    "date":"24.01.2020",
+    "title":"WidowMaker",
+    "src":"https://www.youtube.com/embed/CprjKrgvAYk",
+    "tags":["консультации"]
+  },
+  
+  {
+    "date":"24.01.2020",
+    "title":"Песенка мамонтенка",
+    "src":"https://www.youtube.com/embed/LQsBJbMt17I",
+    "tags":["планирование"]
+  },
+  
+  {
+    "date":"23.01.2020",
+    "title":"Жил был Пес",
+    "src":"https://www.youtube.com/embed/tlNmCFSKEKU",
+    "tags":["инвестиции"]
+  },
+  
+  {
+    "date":"23.01.2020",
+    "title":"Жил был Пес",
+    "src":"https://www.youtube.com/embed/tlNmCFSKEKU",
+    "tags":["недвижимость"]
+  },
+
+  {
+    "date":"26.01.2020",
+    "title":"Приключения Васи Куролесова",
+    "src":"https://www.youtube.com/embed/BtjomGMbx3w",
+    "tags":["деньги"]
+  },
+  
+  {
+    "date":"26.01.2020",
+    "title":"Голубой вагон",
+    "src":"https://www.youtube.com/embed/XVDkdvEplrQ",
+    "tags":["финансы"]
+  },
+
+  {
+    "date":"24.01.2020",
+    "title":"WidowMaker",
+    "src":"https://www.youtube.com/embed/CprjKrgvAYk",
+    "tags":["консультации"]
+  },
+  
+  {
+    "date":"24.01.2020",
+    "title":"Песенка мамонтенка",
+    "src":"https://www.youtube.com/embed/LQsBJbMt17I",
+    "tags":["планирование"]
+  },
+  
+  {
+    "date":"23.01.2020",
+    "title":"Жил был Пес",
+    "src":"https://www.youtube.com/embed/tlNmCFSKEKU",
+    "tags":["инвестиции"]
+  },
+  
+  {
+    "date":"23.01.2020",
+    "title":"Жил был Пес",
+    "src":"https://www.youtube.com/embed/tlNmCFSKEKU",
+    "tags":["недвижимость"]
+  },
+
+  {
+    "date":"26.01.2020",
+    "title":"Приключения Васи Куролесова",
+    "src":"https://www.youtube.com/embed/BtjomGMbx3w",
+    "tags":["деньги"]
+  },
+  
+  {
+    "date":"26.01.2020",
+    "title":"Голубой вагон",
+    "src":"https://www.youtube.com/embed/XVDkdvEplrQ",
+    "tags":["финансы"]
+  },
+
+  {
+    "date":"24.01.2020",
+    "title":"WidowMaker",
+    "src":"https://www.youtube.com/embed/CprjKrgvAYk",
+    "tags":["консультации"]
+  },
+  
+  {
+    "date":"24.01.2020",
+    "title":"Песенка мамонтенка",
+    "src":"https://www.youtube.com/embed/LQsBJbMt17I",
+    "tags":["планирование"]
+  },
+  
+  {
+    "date":"23.01.2020",
+    "title":"Жил был Пес",
+    "src":"https://www.youtube.com/embed/tlNmCFSKEKU",
+    "tags":["инвестиции"]
+  },
+  
+  {
+    "date":"23.01.2020",
+    "title":"Жил был Пес",
+    "src":"https://www.youtube.com/embed/tlNmCFSKEKU",
+    "tags":["недвижимость"]
+  },
+];
+
+let videoTags = [
+  'финансы',
+  'консультации',
+  'деньги',
+  'планирование',
+  'инвестиции',
+  'недвижимость',
+];
