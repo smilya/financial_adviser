@@ -19,16 +19,10 @@
       <p>Все о финансах и инвестициях на моем <a href="https://www.youtube.com/channel/UCDOzzawwihThV5oLp632Wbg/featured?view_as=subscriber" target="_blank">YouTube</a> - канале.</p>
     </div>
   </section>
-  <a name="video-anchor"></a>
+  <a name="pagination-anchor"></a>
   <section class="movies">
     <div class="container">
       <ul class="tags mb-40">
-<!--         <li class="tag">#Финансы</li>
-        <li class="tag">#Консультации</li>
-        <li class="tag">#Деньги</li>
-        <li class="tag">#Планирование</li>
-        <li class="tag">#Инвестиции</li>
-        <li class="tag">#Недвижимость</li> -->
       </ul>
       
       <div class="video-panel mb-130">
@@ -87,6 +81,13 @@
 
       </div>      
     </div>
+    <div class="pagination faq-pagination">
+      <button class="pagination__button pagination__button--left pagination__button--disabled">&#10094;</button>
+      <span class="pagination__current">1</span>
+      <span class="pagination__delimiter">/</span>
+      <span class="pagination__total"></span>
+      <button class="pagination__button pagination__button--right">&#10095;</button>
+    </div>
   </section>
 
   <section class="consultation"></section>
@@ -99,15 +100,15 @@
 <script src="../js/common-interaction.js"></script>
 <script src="../js/consultation.js"></script>
 <script src="../data/video-data.js"></script>
-<script src="../js/makePagination.js"></script>
 <script src="../js/video.js"></script>
 <script src="../js/tags.js"></script>
+<script src="../js/pagination.js"></script>
 <script>
   let activeMenus = document.querySelectorAll('.menu__video');
   activeMenus[0].classList.add('active');
   activeMenus[1].classList.add('active');
   tags__layOutTags(videoTags, document.querySelector('.tags'));
-  tags__setTagHandlers(tags__tagClickHandler, videos, video__layOutFunction);
+  tags__setTagHandlers(videos, video__layOutFunction);
 </script>
 
 

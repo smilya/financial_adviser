@@ -1,4 +1,36 @@
-  .pagination {
+.pagination {
+  font-size: 24px;
+  text-align: center;
+  user-select: none;
+
+  .pagination__current {
+    font-weight: 700;
+  }
+
+  .pagination__delimiter {
+    color: #cbccdd;
+  }
+
+  .pagination__button {
+    font-size: 28px;
+    font-weight: 700;
+    color: $color-danger;
+    border: none;
+    background-color: transparent;
+    padding: 0 25px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    outline: none;
+    
+    &.pagination__button--disabled {
+      color: #d5d6e3;
+      cursor: default;
+    }
+  }
+}
+
+/*   .pagination {
     display: flex;
     justify-content: center;
 
@@ -33,4 +65,4 @@
         color: black;
       }
     }
-  }
+  } */

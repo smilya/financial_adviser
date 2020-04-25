@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"pagination.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/blocks/pagination.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;AAEA;EACE;;AAGF;EACE;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;;;AAIJ;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA","file":"pagination.css"}

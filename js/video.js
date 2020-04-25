@@ -5,8 +5,9 @@ let currentVideos = videos;
 
 
 //функция по заполнению видео-панели, аргументы (массивДанных, page=1)
-function video__layOutFunction() {
-  console.log('layOut')
+function video__layOutFunction(videos, page=1) {
+  console.log(`page ${page}`)
+  console.log(videos)
 }
 
 
@@ -44,7 +45,7 @@ function fillItems(page, items, videoArr) {
 
 fillItems(0, items, videos);
 
-makePagination(pagesNumber, pageBar, fillItems, videos, items, anchor);
+// makePagination(pagesNumber, pageBar, fillItems, videos, items, anchor);
 document.querySelector(".pagination>div:first-of-type").className = "active";
 
 //==========================================
@@ -93,13 +94,6 @@ function onTagClick(tagNum, tag) {
   highlightTag(tagNum);
 }
 
-let tags = document.querySelectorAll('.tags>li');
+// let tags = document.querySelectorAll('.tags>li');
 
-/* tags[0].onclick = function(){ onTagClick(0, "Финансы") };
-tags[1].onclick = function(){ onTagClick(1, "Консультации") };
-tags[2].onclick = function(){ onTagClick(2, "Деньги") };
-tags[3].onclick = function(){ onTagClick(3, "Планирование") };
-tags[4].onclick = function(){ onTagClick(4, "Инвестиции") };
-tags[5].onclick = function(){ onTagClick(5, "Недвижимость") }; 
- */
 

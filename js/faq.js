@@ -129,20 +129,20 @@
 
   function faq__putQuestions(questionsArr, page=1) {
     clearFaqPanel();
-    currentQuestions = questionsArr;
+    pagination.currentData = questionsArr;
     let itemsOnPage = 7;
-let totalPages = Math.ceil(questionsArr.length / itemsOnPage);
+    pagination.totalPages= Math.ceil(questionsArr.length / itemsOnPage);
     for (let i = 0; i < itemsOnPage; i++) {
-      if ((page - 1) * 7 + i >= questionsArr.length) break;
+      if ((page - 1) * itemsOnPage + i >= questionsArr.length) break;
       let newFaqItem = document.createElement('div');
       newFaqItem.classList.add('faq-item');
       newFaqItem.innerHTML = faqItemHTML;
       faqPanel.append(newFaqItem);
 
-      newFaqItem.querySelector('.faq-title').innerText = questionsArr[(page - 1) * 7 + i].title;
-      newFaqItem.querySelector('.faq-answer').innerText = questionsArr[(page - 1) * 7 + i].answer;
-      newFaqItem.querySelector('.faq-video-text').innerText = questionsArr[(page - 1) * 7 + i].videoText;
-      newFaqItem.querySelector('iframe').src = questionsArr[(page - 1) * 7 + i].videoLink;
+      newFaqItem.querySelector('.faq-title').innerText = questionsArr[(page - 1) * itemsOnPage + i].title;
+      newFaqItem.querySelector('.faq-answer').innerText = questionsArr[(page - 1) * itemsOnPage + i].answer;
+      newFaqItem.querySelector('.faq-video-text').innerText = questionsArr[(page - 1) * itemsOnPage + i].videoText;
+      newFaqItem.querySelector('iframe').src = questionsArr[(page - 1) * itemsOnPage + i].videoLink;
     }
     setDropdowns('faq-item');
   }

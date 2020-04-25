@@ -1272,41 +1272,69 @@ footer .second-floor p {
 }
 
 .pagination {
-  display: flex;
-  justify-content: center;
+  font-size: 24px;
+  text-align: center;
+  user-select: none;
 }
-.pagination a,
-.pagination div {
-  width: 55px;
-  height: 55px;
-  border: 1px solid #e8e8e8;
-  border-left: none;
+.pagination .pagination__current {
+  font-weight: 700;
+}
+.pagination .pagination__delimiter {
+  color: #cbccdd;
+}
+.pagination .pagination__button {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f0361f;
+  border: none;
+  background-color: transparent;
+  padding: 0 25px;
   position: relative;
+  top: 1px;
   cursor: pointer;
+  outline: none;
 }
-.pagination a:first-of-type,
-.pagination div:first-of-type {
-  border-left: 1px solid #e8e8e8;
-}
-.pagination a.active,
-.pagination div.active {
-  background-color: #f0361f;
-  border: 1px solid #f0361f;
-}
-.pagination a.active span,
-.pagination div.active span {
-  color: #fff;
-}
-.pagination a span,
-.pagination div span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 600;
-  color: black;
+.pagination .pagination__button.pagination__button--disabled {
+  color: #d5d6e3;
+  cursor: default;
 }
 
+/*   .pagination {
+    display: flex;
+    justify-content: center;
+
+    a,
+    div {
+      width: 55px;
+      height: 55px;
+      border: $border-common;
+      border-left: none;
+      position: relative;
+      cursor: pointer;
+
+      &:first-of-type {
+        border-left: $border-common;
+      }
+
+      &.active {
+        background-color: $color-danger;
+        border: 1px solid $color-danger;
+
+        span {
+          color: #fff;
+        }
+      }
+
+      span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        color: black;
+      }
+    }
+  } */
 .tags .tag {
   display: inline-block;
   font-size: 14px;
@@ -1420,6 +1448,7 @@ footer .second-floor p {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  flex-wrap: wrap;
 }
 .faq .faq-main .faq-tags {
   background-color: #fff;
@@ -1427,13 +1456,9 @@ footer .second-floor p {
   margin-right: 2.2%;
   line-height: 22px;
   padding: 40px;
-  /* 
-        .tag {
-          display: inline-block;
-        } */
 }
 .faq .faq-main .faq-panel {
-  width: 70%;
+  flex-basis: 67.8%;
 }
 .faq .faq-main .faq-panel .faq-item {
   background-color: #fff;
@@ -1478,6 +1503,10 @@ footer .second-floor p {
 }
 .faq .faq-main .faq-panel .faq-item .faq-item__body .faq-video-container iframe {
   margin-right: 45px;
+}
+.faq .faq-main .faq-pagination {
+  flex-basis: 100%;
+  align-self: center;
 }
 
 .who-i-am h3.who-i-am__firstHeading {

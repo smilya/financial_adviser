@@ -3,21 +3,21 @@ let videos = [
     "date":"26.01.2020",
     "title":"Приключения Васи Куролесова",
     "src":"https://www.youtube.com/embed/BtjomGMbx3w",
-    "tags":["деньги"]
+    "tags":["деньги", 'финансы']
   },
   
   {
     "date":"26.01.2020",
     "title":"Голубой вагон",
     "src":"https://www.youtube.com/embed/XVDkdvEplrQ",
-    "tags":["финансы"]
+    "tags":["финансы", 'деньги', "консультации"]
   },
 
   {
     "date":"24.01.2020",
     "title":"WidowMaker",
     "src":"https://www.youtube.com/embed/CprjKrgvAYk",
-    "tags":["консультации"]
+    "tags":["консультации", "финансы", 'деньги']
   },
   
   {

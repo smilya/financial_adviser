@@ -48,6 +48,7 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
 
     .faq-tags {
       background-color: #fff;
@@ -55,14 +56,10 @@
       margin-right: 2.2%;
       line-height: 22px;
       padding: 40px;
-/* 
-      .tag {
-        display: inline-block;
-      } */
     }
 
     .faq-panel {
-      width: 70%;
+      flex-basis: 67.8%;
       
       .faq-item {
         background-color: #fff;
@@ -112,14 +109,14 @@
           iframe {
             margin-right: 45px;
           }
-
          }
-
         }
+      }           
+    }
 
-      }
-           
+    .faq-pagination {
+      flex-basis: 100%;
+      align-self: center;
     }
   }
-
 }

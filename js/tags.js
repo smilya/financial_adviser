@@ -33,10 +33,11 @@ function tags__filterDataOnTags(data, tags) {
   return currentData;
 }
 
-function tags__setTagHandlers(handler, data, layOutItemsFunction) {
+function tags__setTagHandlers(data, layOutItemsFunction) {
   document.querySelector('.tags').addEventListener('click', (event) => {
     if (!event.target.classList.contains('tag')) return;
-    handler(event.target, data, layOutItemsFunction);
+    tags__tagClickHandler(event.target, data, layOutItemsFunction);
+    pagination.currentPage = 1;
   })
 }
 
