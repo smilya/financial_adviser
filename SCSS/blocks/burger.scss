@@ -56,7 +56,29 @@
             width: 152px;
           }
         }
-      }  
+      }
+      
+      .burger-service-item {
+        padding-left: 30px;
+        padding-right: 10px;
+        
+        &:nth-of-type(2) {
+          margin-top: 5px;
+        }
+        
+        &:not(:nth-of-type(6)) {
+          margin-bottom: 10px;
+        }
+
+        &.active {
+          color: $color-danger;
+          font-weight: 700;
+        }
+
+        &:hover {
+          color: $color-danger;
+        }
+      }
     }
 
     header {      

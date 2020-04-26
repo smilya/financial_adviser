@@ -359,6 +359,7 @@ menu li {
   font-weight: 700;
   padding: 17px 0 15px;
   position: relative;
+  user-select: none;
 }
 menu li:hover, menu li:active, menu li.active {
   background-color: #f0361f;
@@ -1114,6 +1115,23 @@ footer .second-floor p {
 .burgerSubstrat--inAction ul a li img {
   left: 105px;
   width: 152px;
+}
+.burgerSubstrat--inAction ul .burger-service-item {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.burgerSubstrat--inAction ul .burger-service-item:nth-of-type(2) {
+  margin-top: 5px;
+}
+.burgerSubstrat--inAction ul .burger-service-item:not(:nth-of-type(6)) {
+  margin-bottom: 10px;
+}
+.burgerSubstrat--inAction ul .burger-service-item.active {
+  color: #f0361f;
+  font-weight: 700;
+}
+.burgerSubstrat--inAction ul .burger-service-item:hover {
+  color: #f0361f;
 }
 .burgerSubstrat--inAction header {
   padding-bottom: 60px;

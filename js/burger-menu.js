@@ -3,27 +3,30 @@ let menuElements = [
   document.querySelector('.header__phone'),
   document.querySelector('.header__email'),
   document.querySelector('.header__button'),
-  document.querySelector('.panel__socials')
+  document.querySelector('.panel__socials'),
 ];
 
 let burger = document.querySelector('.burger');
-let burgerSubstract = document.querySelector('.burgerSubstrat');
+let burgerSubstrat = document.querySelector('.burgerSubstrat');
+
 let burgerClosed = true;
 
 burger.onclick = function() {
-  if (!burgerSubstract.classList.contains('burgerSubstrat--inAction')) {
-    burgerSubstract.classList.add("burgerSubstrat--inAction");
+  if (!burgerSubstrat.classList.contains('burgerSubstrat--inAction')) {
+    burgerSubstrat.classList.add("burgerSubstrat--inAction");
     document.querySelector('.burgerOpposite').classList.add('hidden');
-    for (let elem of menuElements) {
-      elem.classList.add('visible');
+    for (let elem of menuElements) {     
+      elem.classList.add('visible');    
     }
+    addServiceMenu();
   }
   else {
-    for (let elem of menuElements) {
-      elem.classList.remove('visible');
+    for (let elem of menuElements) {      
+      elem.classList.remove('visible');    
     }
-    burgerSubstract.classList.remove("burgerSubstrat--inAction");
+    burgerSubstrat.classList.remove("burgerSubstrat--inAction");
     document.querySelector('.burgerOpposite').classList.remove('hidden');
+    removeServiceMenu();
   }
 }
 
@@ -31,19 +34,38 @@ document.getElementById('topLinkToIndex').addEventListener('click', () => {
   for (let elem of menuElements) {
     elem.classList.remove('visible');
   }
-  burgerSubstract.classList.remove("burgerSubstrat--inAction");
+  burgerSubstrat.classList.remove("burgerSubstrat--inAction");
   document.querySelector('.burgerOpposite').classList.remove('hidden');
 })
 
-
-// Скорее всего не нужно, но возможно понадобится при переходах на другие страницы
-/* document.querySelector('menu ul').onclick = function(event) {
-  if (document.body.clientWidth <= 1350) {
-    for (let elem of menuElements) {
-      elem.classList.remove('visible');
-    }
-    burgerSubstract.classList.remove("burgerSubstrat--inAction");
-    document.querySelector('.burgerOpposite').classList.remove('hidden');
+function addServiceMenu() {
+  let serviceMenu = document.querySelector('.service-menu');
+  if (!serviceMenu) return;
+  let menuItemElems = serviceMenu.querySelectorAll('.service-menu-item');
+  let itemsDescriptions = [];
+  for (let itemElem of menuItemElems) {
+    let itemDescription = {};
+    itemDescription.className = itemElem.className;
+    itemDescription.innerText = itemElem.querySelector('p').innerText;
+    itemDescription.href =  itemElem.querySelector('a').getAttribute('href');
+    itemsDescriptions.push(itemDescription);
   }
-} */
+  for (itemDescription of itemsDescriptions) {
+    let newItem = document.createElement('a');
+    newItem.className = itemDescription.className;
+    newItem.classList.add('burger-service-item');
+    newItem.setAttribute('href', itemDescription.href);
+    newItem.innerText = itemDescription.innerText;
+    document.querySelector('a[href="../pages/about-me.html"]').before(newItem);
+  }
+  return itemsDescriptions;
+}
+
+function removeServiceMenu(params) {
+  let menuItems = document.querySelectorAll('.service-menu-item');
+  if (!menuItems[0]) return;
+  for (let item of menuItems) {
+    item.remove();
+  }
+}
 
