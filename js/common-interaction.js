@@ -96,23 +96,19 @@ document.querySelector('.header__button').onclick = function() {
     fetch(phpPath, {
       method: "POST",
       body: new FormData(form)
-    }).then(response => response.text())
-      .then(result => feedback(result)); 
+    }).then(response => feedback(response.ok), () => feedback(false));
 
     function feedback(result) {
      document.getElementById("modalCallMe").remove();
-
       if (result) {
         body.insertAdjacentHTML("afterbegin", callMeBackConfirm);
       }
       else {
         body.insertAdjacentHTML("afterbegin", callMeBackFail);
       }
-
       document.getElementById("close-info").onclick = function() {
         document.getElementById('subscribeInfo').remove();
-      }
-      
+      }      
     }    
   }
 }
