@@ -24,69 +24,16 @@
     <div class="container">
       <ul class="tags mb-40">
       </ul>
-      
       <div class="video-panel mb-130">
-        <div>
-  
-          <div class="item">
-            <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p></p>   
-          </div>
-  
-          <div class="item">
-            <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p></p>   
-          </div>
-  
-          <div class="item">
-            <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p></p>   
-          </div>
-  
-          <div class="item">
-            <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p></p>   
-          </div>
-  
-          <div class="item">
-            <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p></p>   
-          </div>
-  
-          <div class="item">
-            <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p></p>   
-          </div>
-  
-          <div class="item">
-            <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p></p>   
-          </div>
-  
-          <div class="item">
-            <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p></p>   
-          </div>
-  
-          <div class="item">
-            <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p></p>   
-          </div>
-
-          <div class="item--dummy"></div>
-
+        <div class="item--dummy"></div>
+        <div class="pagination video-pagination">
+          <button class="pagination__button pagination__button--left pagination__button--disabled">&#10094;</button>
+          <span class="pagination__current">1</span>
+          <span class="pagination__delimiter">/</span>
+          <span class="pagination__total"></span>
+          <button class="pagination__button pagination__button--right">&#10095;</button>
         </div>
-
-        <div class="pagination"></div>
-
       </div>      
-    </div>
-    <div class="pagination faq-pagination">
-      <button class="pagination__button pagination__button--left pagination__button--disabled">&#10094;</button>
-      <span class="pagination__current">1</span>
-      <span class="pagination__delimiter">/</span>
-      <span class="pagination__total"></span>
-      <button class="pagination__button pagination__button--right">&#10095;</button>
     </div>
   </section>
 
@@ -108,7 +55,9 @@
   activeMenus[0].classList.add('active');
   activeMenus[1].classList.add('active');
   tags__layOutTags(videoTags, document.querySelector('.tags'));
-  tags__setTagHandlers(videos, video__layOutFunction);
+  tags__setTagHandlers(videos, video__layOutVideos);
+  video__layOutVideos(videos);
+  pagination.setButtonsHandler(video__layOutVideos);
 </script>
 
 

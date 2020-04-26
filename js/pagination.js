@@ -22,7 +22,7 @@ let pagination = {
   checkButtons: function () {
     this.buttonLeft.classList.remove('pagination__button--disabled');
     this.buttonRight.classList.remove('pagination__button--disabled');
-    if (this.currentPage === 1) {
+    if (this.currentPage <= 1) {
       this.buttonLeft.classList.add('pagination__button--disabled');
     }
     if (this.currentPage === this.totalPages) {

@@ -37,7 +37,6 @@ function tags__setTagHandlers(data, layOutItemsFunction) {
   document.querySelector('.tags').addEventListener('click', (event) => {
     if (!event.target.classList.contains('tag')) return;
     tags__tagClickHandler(event.target, data, layOutItemsFunction);
-    pagination.currentPage = 1;
   })
 }
 

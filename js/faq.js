@@ -124,20 +124,22 @@
       </div>            
   `;
 
-  let faqPanel = document.querySelector(".faq-panel");
-  let currentQuestions = faqs;
-
   function faq__putQuestions(questionsArr, page=1) {
     clearFaqPanel();
     pagination.currentData = questionsArr;
     let itemsOnPage = 7;
-    pagination.totalPages= Math.ceil(questionsArr.length / itemsOnPage);
+    pagination.totalPages= Math.ceil(questionsArr.length / itemsOnPage); 
+    if (!pagination.totalPages) {
+      pagination.currentPage = 0;
+      return;
+    }
+    pagination.currentPage = page;
     for (let i = 0; i < itemsOnPage; i++) {
       if ((page - 1) * itemsOnPage + i >= questionsArr.length) break;
       let newFaqItem = document.createElement('div');
       newFaqItem.classList.add('faq-item');
       newFaqItem.innerHTML = faqItemHTML;
-      faqPanel.append(newFaqItem);
+      document.querySelector(".faq-panel").append(newFaqItem);
 
       newFaqItem.querySelector('.faq-title').innerText = questionsArr[(page - 1) * itemsOnPage + i].title;
       newFaqItem.querySelector('.faq-answer').innerText = questionsArr[(page - 1) * itemsOnPage + i].answer;
@@ -145,10 +147,12 @@
       newFaqItem.querySelector('iframe').src = questionsArr[(page - 1) * itemsOnPage + i].videoLink;
     }
     setDropdowns('faq-item');
+
+    function clearFaqPanel() {
+      let items = document.querySelectorAll('.faq-item');
+      for (let i of items) i.remove();
+    }  
   }
 
-  function clearFaqPanel() {
-    let items = document.querySelectorAll('.faq-item');
-    for (let i of items) i.remove();
-  }  
+
   

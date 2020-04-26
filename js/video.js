@@ -3,97 +3,32 @@
 let videoPanel = document.querySelector(".video-panel");
 let currentVideos = videos;
 
+let itemInnerHTML = `
+  <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p></p>`;
 
-//функция по заполнению видео-панели, аргументы (массивДанных, page=1)
-function video__layOutFunction(videos, page=1) {
-  console.log(`page ${page}`)
-  console.log(videos)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-// Код плохой - переписать!!!! Сделать как у faq
- let items = document.querySelectorAll('.item');
-let pagesNumber = Math.ceil(videos.length / 9);
-let pageBar = document.querySelector('.pagination');
-let anchor = "#video-anchor"
-
-function fillItems(page, items, videoArr) {
-  for (let i of items) {
-    i.classList.add('item--hidden');
-  }
-
-  for (let i = 0; i < 9; i++) {
-    let item = items[i];
-    let video = videoArr[page*9+i];
-    if (!video) return;
-
-    item.children[0].setAttribute('src', video.src);
-    item.children[1].innerHTML = video.title; 
-    item.classList.remove('item--hidden');    
-  }
-}
-
-fillItems(0, items, videos);
-
-// makePagination(pagesNumber, pageBar, fillItems, videos, items, anchor);
-document.querySelector(".pagination>div:first-of-type").className = "active";
-
-//==========================================
-
-function filterVideos(tag) {
-  let arr = [];
-
-  for (let i = 0; i < videos.length; i++) {
-    let tags = videos[i].tags;
-    for (let j=0; j<tags.length; j++) {
-      if (tags[j] == tag) arr.push(videos[i]);
-    }    
-  }
-
-  return arr;
-}
-
-
-function fillFilteredPage(tag) {
-  let filteredArr = filterVideos(tag);
-  fillItems(0, items, filteredArr);
-  removePagination();
-  let numOfPages = Math.ceil(filteredArr.length / 9);
-  if (numOfPages) {
-    makePagination(numOfPages, pageBar, fillItems, filteredArr, items, anchor);
-    document.querySelector(".pagination>div:first-of-type").className = "active";
-  }
-  
-}
-
-function highlightTag(tagNum) {
-  for (let i of tags) {
-    i.classList.remove("active");
-  }
-  tags[tagNum].classList.add("active");
-}
-
-function onTagClick(tagNum, tag) {
-  if (tags[tagNum].classList.contains('active')) {
-    tags[tagNum].classList.remove('active');
-    fillItems(0, items, videos);
+function video__layOutVideos(videos, page=1) {
+  clearVideoPanel();
+  pagination.currentData = videos;
+  let itemsOnPage = 9;
+  pagination.totalPages= Math.ceil(videos.length / itemsOnPage);
+  if (!pagination.totalPages) {
+    pagination.currentPage = 0;
     return;
   }
+  pagination.currentPage = page;
+  for (let i = 0; i < itemsOnPage; i++) {
+    if ((page - 1) * itemsOnPage + i >= videos.length) break;
+    let newItem = document.createElement('div');
+    newItem.classList.add('item');
+    newItem.innerHTML = itemInnerHTML;
+    document.querySelector('.item--dummy').before(newItem);
+    newItem.querySelector('iframe').setAttribute('src', videos[(page - 1) * itemsOnPage + i].src) ;
+    newItem.querySelector('p').innerText = videos[(page - 1) * itemsOnPage + i].title;
+  }
 
-  fillFilteredPage(tag);
-  highlightTag(tagNum);
+  function clearVideoPanel() {
+    let items = document.querySelectorAll('.item');
+    for (let item of items) item.remove();
+  }
 }
-
-// let tags = document.querySelectorAll('.tags>li');
-
-

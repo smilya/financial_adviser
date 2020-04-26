@@ -2,14 +2,12 @@
   .movies {
     .container {
       .video-panel {
-        div {
-          .item {
-            width: $width-duet;
-            
-            iframe {
-              width: 100%;
-              height: 30vw;
-            }
+        .item {
+          width: $width-duet;
+          
+          iframe {
+            width: 100%;
+            height: 30vw;
           }
         }
       }
@@ -21,14 +19,12 @@
   .movies {
     .container {
       .video-panel {
-        div {
-          .item {
+        .item {
+          width: 100%;
+          
+          iframe {
             width: 100%;
-            
-            iframe {
-              width: 100%;
-              height: 65vw;
-            }
+            height: 65vw;
           }
         }
       }

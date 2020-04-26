@@ -1346,29 +1346,32 @@ footer .second-floor p {
   color: #f0361f;
 }
 
-.video-panel > div:first-of-type {
+.video-panel {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.video-panel > div:first-of-type .item {
+.video-panel .item {
   width: 31.25%;
   margin-bottom: 60px;
 }
-.video-panel > div:first-of-type .item iframe {
+.video-panel .item iframe {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
 }
-.video-panel > div:first-of-type .item p {
+.video-panel .item p {
   font-weight: 600;
   line-height: 24px;
 }
-.video-panel > div:first-of-type .item--hidden {
+.video-panel .item--hidden {
   display: none;
 }
-.video-panel > div:first-of-type .item--dummy {
+.video-panel .item--dummy {
   width: 31.25%;
+}
+.video-panel .video-pagination {
+  flex-basis: 100%;
 }
 
 .service-panel {
@@ -3235,19 +3238,19 @@ footer .second-floor p {
   }
 }
 @media screen and (max-width: 1350px) {
-  .movies .container .video-panel div .item {
+  .movies .container .video-panel .item {
     width: 48%;
   }
-  .movies .container .video-panel div .item iframe {
+  .movies .container .video-panel .item iframe {
     width: 100%;
     height: 30vw;
   }
 }
 @media screen and (max-width: 765px) {
-  .movies .container .video-panel div .item {
+  .movies .container .video-panel .item {
     width: 100%;
   }
-  .movies .container .video-panel div .item iframe {
+  .movies .container .video-panel .item iframe {
     width: 100%;
     height: 65vw;
   }
