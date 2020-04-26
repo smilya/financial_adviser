@@ -26,7 +26,6 @@
     <section class="who-i-am">
       <div class="container">
         <div class="who-i-am__intro mb-100">
-          <!-- <div class="who-i-am__foo"></div> -->
           <img src="../images/who-i-am/who-i-am-image.jpg" alt="about me img">
           <div class="who-i-am__slogan">
             <h4>Эффективность. <br>Надежность. <br>Безопасность.</h4>
@@ -102,10 +101,11 @@
         <h3 class="mb-60">Кейсы из практики</h3>
   
         <div class="slider mb-120">
+          <a name="pagination-anchor"></a>
           <div class="slider-body slider-body--who-i-am">
             <div class="slider-blackout hidden"></div>
-            <div class="slider-button slider-button--left"><img src="../images/slider/left-arrow.png" alt="left arrow"></div>
-            <div class="slider-button slider-button--right"><img src="../images/slider/right-arrow.png" alt="right arrow"></div>
+            <!-- <div class="slider-button slider-button--left"><img src="../images/slider/left-arrow.png" alt="left arrow"></div>
+            <div class="slider-button slider-button--right"><img src="../images/slider/right-arrow.png" alt="right arrow"></div> -->
             <div class="slider-who-i-am__container">
               <div>
                 <h6>Исходные данные</h6>
@@ -125,7 +125,13 @@
             </div>
   
           </div>
-          <div class="slider-pagination"></div>
+          <div class="pagination">
+            <button class="pagination__button pagination__button--left pagination__button--disabled">&#10094;</button>
+            <span class="pagination__current">1</span>
+            <span class="pagination__delimiter">/</span>
+            <span class="pagination__total"></span>
+            <button class="pagination__button pagination__button--right">&#10095;</button>
+          </div>
         </div>
       </div>
     </section>
@@ -142,9 +148,12 @@
 <script src="../js/burger-menu.js"></script>
 <script src="../data/who-i-am-data.js"></script>
 <script src="../js/who-i-am.js"></script>
+<script src="../js/pagination.js"></script>
 <script>
   let activeMenus = document.querySelectorAll('.menu__about-me');
   activeMenus[0].classList.add('active');
-  activeMenus[1].classList.add('active');
+  activeMenus[1].classList.add('active');  
+  whoIAm__switchCase(cases);
+  pagination.setButtonsHandler(whoIAm__switchCase);
 </script>
 </html>

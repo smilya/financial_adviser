@@ -108,10 +108,11 @@
         </ul>
         <h3 class="mb-40">Кейсы из практики</h3>
         <div class="slider mb-120">
+          <a name="pagination-anchor"></a>
           <div class="slider-body slider-body--service-opinion">
             <div class="slider-blackout hidden"></div>
-            <div class="slider-button slider-button--left"><img src="../images/slider/left-arrow.png" alt="left arrow"></div>
-            <div class="slider-button slider-button--right"><img src="../images/slider/right-arrow.png" alt="right arrow"></div>
+            <!-- <div class="slider-button slider-button--left"><img src="../images/slider/left-arrow.png" alt="left arrow"></div>
+            <div class="slider-button slider-button--right"><img src="../images/slider/right-arrow.png" alt="right arrow"></div> -->
             <div class="slider-service-opinion__container">
               <h4></h4>
               <p></p>
@@ -132,7 +133,13 @@
               </div>
             </div>
           </div>
-          <div class="slider-pagination"></div>      
+          <div class="pagination">
+            <button class="pagination__button pagination__button--left pagination__button--disabled">&#10094;</button>
+            <span class="pagination__current">1</span>
+            <span class="pagination__delimiter">/</span>
+            <span class="pagination__total"></span>
+            <button class="pagination__button pagination__button--right">&#10095;</button>
+          </div>   
         </div>
       </div>
     </section>
@@ -151,12 +158,15 @@
 <script src="../data/service-opinion-data.js"></script>
 <script src="../js/service-opinion.js"></script>
 <script src="../js/dropdown.js"></script>
+<script src="../js/pagination.js"></script>
 <script>
   let activeMenus = document.querySelectorAll('.menu__service');
   activeMenus[0].classList.add('active');
   activeMenus[1].classList.add('active');
   document.querySelector('.service-item-opinion').classList.add('active');
   setDropdowns('consult-item');
+  serviceOpinion__fillSlider(cases);
+  pagination.setButtonsHandler(serviceOpinion__fillSlider);
 </script>
 
 </html>

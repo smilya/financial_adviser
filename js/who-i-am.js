@@ -1,44 +1,24 @@
-let initialDataField = document.querySelector('.slider-who-i-am__initialData');
-let recomendationsField = document.querySelector('.slider-who-i-am__recomendations');
-let outcomeField = document.querySelector('.slider-who-i-am__outcome');
-let paginationPanel = document.querySelector(".slider-pagination");
-for (let i = 0; i < cases.length; i++) {
-  let newDot = document.createElement('div');
-  newDot.classList.add('slider-pagination-dot');
-  paginationPanel.append(newDot);
-}
-let paginationDots = document.querySelectorAll('.slider-pagination-dot');
-let blackout = document.querySelector('.slider-blackout');
-let currentCase = 0;
+'use strict'
 
-switchCase(currentCase);
+function whoIAm__switchCase(cases, number=1) {
+  let initialDataField = document.querySelector('.slider-who-i-am__initialData');
+  let recomendationsField = document.querySelector('.slider-who-i-am__recomendations');
+  let outcomeField = document.querySelector('.slider-who-i-am__outcome');
+  let blackout = document.querySelector('.slider-blackout');
 
-function switchCase(number) {
+  pagination.currentData = cases;
+  pagination.totalPages= cases.length; 
+  if (!pagination.totalPages) {
+    pagination.currentPage = 0;
+    return;
+  }
+  pagination.currentPage = number;
+
   blackout.classList.remove('hidden');
   setTimeout( () => {blackout.classList.add('hidden');}, 100)
-  initialDataField.innerHTML = cases[number].initialData;
-  recomendationsField.innerHTML = cases[number].recomendations;
-  outcomeField.innerHTML = cases[number].outcome;
-  for (let dot of paginationDots) {
-    dot.classList.remove('active');
-  }
-  paginationDots[number].classList.add('active');
-}
-
-document.querySelector('.slider-button--right').onclick = function() {
-  currentCase++;
-  if (currentCase === cases.length) {
-    currentCase = 0;
-  }
-  switchCase(currentCase);
-}
-
-document.querySelector('.slider-button--left').onclick = function() {
-  currentCase--;
-  if (currentCase ===-1) {
-    currentCase = cases.length - 1;
-  }
-  switchCase(currentCase);
+  initialDataField.innerHTML = cases[number-1].initialData;
+  recomendationsField.innerHTML = cases[number-1].recomendations;
+  outcomeField.innerHTML = cases[number-1].outcome;
 }
 
 function showDocument(innerHTML) {

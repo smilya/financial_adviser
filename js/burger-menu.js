@@ -61,8 +61,8 @@ function addServiceMenu() {
   return itemsDescriptions;
 }
 
-function removeServiceMenu(params) {
-  let menuItems = document.querySelectorAll('.service-menu-item');
+function removeServiceMenu() {
+  let menuItems = document.querySelectorAll('.burger-service-item');
   if (!menuItems[0]) return;
   for (let item of menuItems) {
     item.remove();
