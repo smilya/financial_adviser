@@ -61,23 +61,21 @@ launchConsultation.onclick = function() {
 
   // Проверяем, вызвана ли функция с главной страницы (index.html)
   let indexFlag = document.querySelector('.intro');
-
+  let phpPath;
   if (indexFlag) {
-    fetch('./php/consultation.php', {
-      method: 'POST',
-      body: new FormData(form),
-    }).then(response => response.text())
-      .then(result => feedback(result)); 
+    phpPath = "./php/consultation.php";
   }
-
   else {
-    fetch('../php/consultation.php', {
-      method: 'POST',
-      body: new FormData(form),
-    }).then(response => response.text())
-      .then(result => feedback(result));     
+    phpPath = "../php/consultation.php";
   }
 
+  fetch(phpPath, {
+    method: 'POST',
+    body: new FormData(form),
+  // }).then(response => feedback(response.ok), () => feedback(false)); 
+  }).then(response => response.json())
+  .then(result => feedback(result), () => feedback(false)); 
+ 
   function feedback(result) {
     let body = document.querySelector('body');
 
@@ -93,7 +91,7 @@ launchConsultation.onclick = function() {
     }
 
     form.reset();
-   }
+  }
 
 } 
    let consultatinConfirm = `
@@ -109,7 +107,7 @@ launchConsultation.onclick = function() {
     </div>
    `;
 
-   let consultatinFail = `
+   let consultationFail = `
     <div id="consultationInfo">
       <div id="blur-over"></div>
       <div class="modal-window modal-info">

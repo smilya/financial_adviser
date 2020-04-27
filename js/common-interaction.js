@@ -96,7 +96,8 @@ document.querySelector('.header__button').onclick = function() {
     fetch(phpPath, {
       method: "POST",
       body: new FormData(form)
-    }).then(response => feedback(response.ok), () => feedback(false));
+    }).then(response => response.json())
+    .then(result => feedback(result), () => feedback(false));
 
     function feedback(result) {
      document.getElementById("modalCallMe").remove();
@@ -166,7 +167,8 @@ document.getElementById("subscribe-button").onclick = function () {
     fetch(phpPath,{
       method: "POST",
       body: emailField.value,
-    }).then(response => response.text()).then(answer => onAnswer(answer));  
+    }).then(response => response.json())
+    .then(result => onAnswer(result), () => onAnswer(false)); 
 
     function onAnswer(answer) {
       if (answer) {

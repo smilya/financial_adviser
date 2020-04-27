@@ -57,7 +57,8 @@
     fetch("../php/ask-question.php", {
       method: "POST",
       body: new FormData(form),
-    }).then(response => response.text()).then(result => showResult(result));
+    }).then(response => response.json())
+      .then(result => showResult(result), () => showResult(false));
         
     let askQuestionConfirm = `
       <div id="askQuestionInfo">
@@ -86,7 +87,6 @@
 
     function showResult(result) {
       modalAskQuestion.classList.add('hidden');
-      console.log(result);
 
       if (result) {
         body.insertAdjacentHTML('afterbegin', askQuestionConfirm);
