@@ -144,7 +144,9 @@ let callMeBackFail = `
 document.getElementById("subscribe-button").onclick = function () {
   //Проверки  
   let  emailField = document.getElementById("subscribe-email");
-  emailField.classList.remove("error");
+  emailField.oninput = function() {
+    emailField.classList.remove('error');
+  };
   let emailArr = emailField.value.trim().split("@");
   if(!emailArr[1]) {
     emailField.classList.add("error");
@@ -155,16 +157,17 @@ document.getElementById("subscribe-button").onclick = function () {
     emailField.classList.add("error");
     return;
   }
+  emailField.oninput = '';
   //На сервер, путь зависит от того, с какой страницы запущена функция
   let phpPath;
     if (indexFlag) {
-      phpPath = "./php/subscribe.php";
+      phpPath = "./php/subscribe_db.php";
     }
     if (!indexFlag) {
-      phpPath = "../php/subscribe.php";
+      phpPath = "../php/subscribe_db.php";
     }
 
-    fetch(phpPath,{
+    fetch(phpPath, {
       method: "POST",
       body: emailField.value,
     }).then(response => response.json())
@@ -211,3 +214,10 @@ let subscribeFail = `
     </div>
   </div>
 `;
+
+function sendMail(email) {
+  fetch('http://smilya.ru/finance/php/subscribe_db.php', {
+    method: "POST",
+    body: email,
+  }).then(response => response.json()).then(console.log);
+}
