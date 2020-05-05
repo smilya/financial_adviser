@@ -87,12 +87,11 @@ document.querySelector('.header__button').onclick = function() {
     let form = document.querySelector(".modal-window__main");
     let phpPath;
     if (indexFlag) {
-      phpPath = "./php/call-me-back.php";
+      phpPath = "./php/call-me-back_db.php";
     }
     if (!indexFlag) {
-      phpPath = "../php/call-me-back.php";
+      phpPath = "../php/call-me-back_db.php";
     }
-
     fetch(phpPath, {
       method: "POST",
       body: new FormData(form)
