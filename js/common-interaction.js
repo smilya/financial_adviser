@@ -63,6 +63,12 @@ document.querySelector('.header__button').onclick = function() {
     let phone =  document.getElementById('modal-phone');
     name.classList.remove('error');
     phone.classList.remove('error');
+    document.getElementById('modal-name').oninput = function() {
+      document.getElementById('modal-name').classList.remove('error');      
+    }
+    document.getElementById('modal-phone').oninput = function() {
+      document.getElementById('modal-phone').classList.remove('error');      
+    }
 
     if (!(name.value)) {
       errorFlag = true;
@@ -82,6 +88,8 @@ document.querySelector('.header__button').onclick = function() {
     }
 
     if (errorFlag) return;
+    document.getElementById('modal-name').oninput = '';
+    document.getElementById('modal-phone').oninput = '';
 
     // Отправка данных формы, ожидание ответа
     let form = document.querySelector(".modal-window__main");
