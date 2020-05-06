@@ -22,6 +22,9 @@
 
   document.getElementById("launchAskQuestion").onclick = function () {
     let errorFlag = false;
+    nameField.oninput = () => {nameField.classList.remove('error');};
+    emailField.oninput = () => {emailField.classList.remove('error');};
+    questionField.oninput = () => {questionField.classList.remove('error');};
 
     nameField.classList.remove("error");
     emailField.classList.remove("error");
@@ -52,9 +55,14 @@
     
     if (errorFlag) return;
 
+    nameField.oninput = '';
+    emailField.oninput = '';
+    questionField.oninput = '';
+
     let body = document.querySelector("body");
     let form = document.querySelector("form");
-    fetch("../php/ask-question.php", {
+    // fetch("../php/ask-question.php", {
+    fetch("http://www.smilya.ru/finance/php/ask-question_db.php", {
       method: "POST",
       body: new FormData(form),
     }).then(response => response.json())
