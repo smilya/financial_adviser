@@ -63,16 +63,15 @@ launchConsultation.onclick = function() {
   let indexFlag = document.querySelector('.intro');
   let phpPath;
   if (indexFlag) {
-    phpPath = "./php/consultation.php";
+    phpPath = "./php/consultations_db.php";
   }
   else {
-    phpPath = "../php/consultation.php";
+    phpPath = "../php/consultations_db.php";
   }
 
   fetch(phpPath, {
     method: 'POST',
     body: new FormData(form),
-  // }).then(response => feedback(response.ok), () => feedback(false)); 
   }).then(response => response.json())
   .then(result => feedback(result), () => feedback(false)); 
  
