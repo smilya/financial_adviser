@@ -1,7 +1,7 @@
 "use strict";
 
 let videoPanel = document.querySelector(".video-panel");
-let currentVideos = videos;
+// let currentVideos = videos;
 
 let itemInnerHTML = `
   <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -31,4 +31,10 @@ function video__layOutVideos(videos, page=1) {
     let items = document.querySelectorAll('.item');
     for (let item of items) item.remove();
   }
+}
+
+function video__proceedVideos(callback) {
+  fetch('../php/getVideos_db.php')
+    .then(response => response.json())
+    .then(callback);
 }
