@@ -34,7 +34,7 @@ function video__layOutVideos(videos, page=1) {
 }
 
 function video__proceedVideos(callback) {
-  fetch('../php/getVideos_db.php')
+  fetch('http://smilya.ru/finance/php/getVideos_db.php')
     .then(response => response.json())
     .then(callback);
 }
