@@ -30,3 +30,10 @@ function mmedia__fillItems(publications, page=1) {
     item.children[3].children[1].setAttribute('href', unit.link);
   }
 } 
+
+function mmedia__proceedPublications(callback) {
+  fetch('http://smilya.ru/finance/php/getPublications_db.php')
+  // fetch('../php/getPublications_db.php')
+    .then(responce => responce.json())
+    .then(callback);
+}
