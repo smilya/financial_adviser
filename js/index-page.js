@@ -3,7 +3,7 @@
 let mediaItems = document.querySelectorAll('.publications .item');
 
 fetch("http://smilya.ru/finance/php/index-page.php")
-// fetch("../php/index-page.php")
+// fetch("./php/index-page.php")
   .then(response => response.json())
   .then(obj => {
     let iframes = document.querySelectorAll("iframe");
